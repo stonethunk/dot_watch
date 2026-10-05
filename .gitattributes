@@ -1,0 +1,3 @@
+# Preserve upstream notices byte for byte, including their original whitespace.
+Apps/Phone/Notices/** -whitespace
+Apps/Watch/Notices/** -whitespace

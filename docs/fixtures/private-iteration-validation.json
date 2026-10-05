@@ -1,0 +1,29 @@
+{
+  "checked": "2026-10-03",
+  "core_tests_passed": 21,
+  "private_credential_tests_passed": 3,
+  "private_build_signed": true,
+  "private_build_installed_on_test_phone": true,
+  "beta_build_passed": true,
+  "distribution_checks": {
+    "public": {
+      "personal_setup_present": false,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": false,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "dependency_notices_verified": 10
+    },
+    "personal_positive_control": {
+      "personal_setup_present": true,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": true,
+      "openai_client_configured": false,
+      "callback_scheme_present": true
+    }
+  },
+  "phone_keychain_import_verified": false,
+  "second_tester_account_provisioned": false,
+  "watch_physical_test_verified": false,
+  "carplay_entitlement_granted": false
+}

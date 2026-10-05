@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-04T19:43:25.797293+00:00",
+  "build": "0.1.0 (4)",
+  "architecture": "Watch-owned authentication, Dot discovery/signaling and direct audio; encrypted paired-phone setup only",
+  "root_tests": 46,
+  "audio_tests": 20,
+  "mock_safari_tests": 8,
+  "signed_phone_and_watch_build": true,
+  "private_simulator_build": true,
+  "beta_simulator_build": true,
+  "clean_public_source_bootstrap_verified": true,
+  "public_private_boundary": {
+    "public": {
+      "personal_setup_present": false,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": false,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": false,
+      "private_safari_extension_present": false,
+      "app_icon_present": true,
+      "remote_watch_media_present": false,
+      "private_watch_credential_sync_present": false,
+      "dependency_notices_verified": 10
+    },
+    "public_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": false,
+      "watch_private_audio_probe_present": false,
+      "watch_private_voice_present": false
+    },
+    "personal_positive_control": {
+      "personal_setup_present": true,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": true,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": true,
+      "private_safari_extension_present": true,
+      "app_icon_present": true,
+      "remote_watch_media_present": true,
+      "private_watch_credential_sync_present": true,
+      "private_browser_resources_verified": 5
+    },
+    "personal_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": true,
+      "watch_microphone_requested": true,
+      "watch_private_audio_probe_present": true,
+      "watch_private_voice_present": true
+    }
+  },
+  "installation": {
+    "phone": true,
+    "watch": true
+  },
+  "physical_standalone_enrollment_verified": false,
+  "physical_locked_phone_voice_verified": false,
+  "physical_absent_phone_voice_verified": false,
+  "ten_minute_wrist_down_passed": false,
+  "carplay_entitlement_granted": false,
+  "credentials_in_repository": false,
+  "recordings_in_repository": false,
+  "private_target_in_beta_rejected": true,
+  "private_target_beta_rejection": "Compile-time private configuration guard"
+}

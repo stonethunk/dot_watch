@@ -1,0 +1,2397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008E782F4DB2546C81EACAB4 /* swift-asn1-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FB61AED88CB1177973F0149 /* swift-asn1-NOTICE.txt */; };
+		042A724D39E7E341A95905C6 /* swift-certificates-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A36A306DEBB605DE8B480C95 /* swift-certificates-LICENSE.txt */; };
+		0466EB15AE79936CEFEF6418 /* DotCore in Frameworks */ = {isa = PBXBuildFile; productRef = C0D2A4193E703E0A0D511AC6 /* DotCore */; };
+		08D182E07A7067A0758FB7EC /* OpenAISignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C453101A082F25AC5EB7CBD /* OpenAISignIn.swift */; };
+		0A649685AD84BAAE2A1B9835 /* swift-ssl-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DF5541BCFFCCC9744C26AB26 /* swift-ssl-LICENSE.txt */; };
+		0FB12BA4474B303224B881FA /* swift-crypto-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD38E59A184574C10302C961 /* swift-crypto-NOTICE.txt */; };
+		119A6F5F4C2BB4CDC82DFE32 /* DotCore in Frameworks */ = {isa = PBXBuildFile; productRef = 85D495BEF9F486A500D4DA9C /* DotCore */; };
+		123D4F4B54AC27B16976EAA6 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 42AE8AA0ADA0C4032F5D8C2D /* manifest.json */; };
+		161EF7C18E283A8619B8269F /* DotAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6411A146BDA75F20DDDC30BF /* DotAuth */; };
+		1A69D604018A4DEBDA715843 /* NativeVoiceMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86611A247EF027962353A900 /* NativeVoiceMedia.swift */; };
+		1CAF97C9A98DD3E64D9601D9 /* jwt-kit-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 324FE7619796253FA05920AC /* jwt-kit-LICENSE.txt */; };
+		1D5E3ECC1FA3EE063E0DFED1 /* DotPrivateSignIn.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0FB4E9FDD3448C50ACD2D989 /* DotPrivateSignIn.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1E2A017AC89CF96C213302AB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F30A74687072A49EDA0D9 /* SafariWebExtensionHandler.swift */; };
+		1EEB7BD6BCE59091298FC909 /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E025208552F44715CC4AE98 /* IdentityStore.swift */; };
+		2118656E4C011857C76F5116 /* swift-log-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27D59857C336E6B27CE526FA /* swift-log-LICENSE.txt */; };
+		21B8DBAAB3F44C8ABFBCBBD8 /* DotPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974D65763CD5CD2DB8DE1FDA /* DotPhoneApp.swift */; };
+		23B62B2F624E9B845A570946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3731C587021733525BC1FC7 /* Assets.xcassets */; };
+		23DF487938CD616C727F3FEF /* DotWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17AAB8240366068FC82AA6C0 /* DotWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27C174B216FA0611DEA85836 /* swift-log-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 132422FB68620371EC710E63 /* swift-log-NOTICE.txt */; };
+		2AC9502C0619289441E21E63 /* PrivateWatchChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597204918391DCF94BF7CE1 /* PrivateWatchChannel.swift */; };
+		2D1C418472E6A8D77612E472 /* PrivateWatchChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597204918391DCF94BF7CE1 /* PrivateWatchChannel.swift */; };
+		2D326FE6A2ABDD20BE8B15D6 /* swift-crypto-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F619E1ADAEF465315EB75031 /* swift-crypto-LICENSE.txt */; };
+		3347E80328D195CE96818A4A /* DotComplication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9B3A978E951E0C6D5C83435E /* DotComplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		342D3E5D8AC7AAC3F101C323 /* PrivateWatchChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597204918391DCF94BF7CE1 /* PrivateWatchChannel.swift */; };
+		354040C95A1759159D620DAB /* DotCore in Frameworks */ = {isa = PBXBuildFile; productRef = 421245BCD3DD4CE6C9D22B32 /* DotCore */; };
+		3B7D3474F79064ADECE9A604 /* PrivateWatchAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF05662E34D3A3DE8ABAEB /* PrivateWatchAccess.swift */; };
+		3C5272DAC9730A6A7B3CA8C9 /* WatchAudioDiagnostic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B5A092F804430F85A4A024 /* WatchAudioDiagnostic.swift */; };
+		3CEB72E9DFF10E1B93772ED7 /* DotAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BEBDC4B6AE54EB7E09DFD18F /* DotAuth */; };
+		3D89D5D1F3CD369266BF54C0 /* ReadmeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FE322986101CD16AB19F1 /* ReadmeDemo.swift */; };
+		3F13D3D3C6366C82855DD34B /* swift-networking-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 354804F5F6CFDEB96B967789 /* swift-networking-README.md */; };
+		4596414745F78963CA911085 /* WatchAudioDiagnostic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B5A092F804430F85A4A024 /* WatchAudioDiagnostic.swift */; };
+		45B583CBCEA8B50EC84B44AF /* WatchAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2F71DD96F153643B68C110E /* WatchAudioKit */; };
+		46DA9177BCDB57CCCF04AEB1 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F88CB225FD734E620E5A5B /* PhoneView.swift */; };
+		48EF3FABB835B6E4303FE8CD /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F88CB225FD734E620E5A5B /* PhoneView.swift */; };
+		4914A967F7DE63C986D055EE /* WatchVoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814EE816103BB087E16317DA /* WatchVoiceController.swift */; };
+		4A7A1C3A61B6E62B172C0BAF /* swift-ssl-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DF5541BCFFCCC9744C26AB26 /* swift-ssl-LICENSE.txt */; };
+		4D6D830004256F10BD9166B4 /* RemoteWatchMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CB248E60371E0937A282 /* RemoteWatchMedia.swift */; };
+		4EC8C86885568596F1CA0692 /* PhoneWebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3A567DFC9653A0AF80AB86 /* PhoneWebRTC */; };
+		4EEC925C569D84111BA64625 /* WatchAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8EF73DCFC33AEB81A220CE37 /* WatchAudioKit */; };
+		4F7377E39AEBF07E1514A5CE /* swift-asn1-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FB61AED88CB1177973F0149 /* swift-asn1-NOTICE.txt */; };
+		4FFB6535BA14A5F5E6AF4378 /* ReadmeDemoDot.png in Resources */ = {isa = PBXBuildFile; fileRef = AC08012912DAC52826D59DEF /* ReadmeDemoDot.png */; };
+		52B7946B66F3A6F4A1C47867 /* WatchVoiceAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82BB18A3A0000DF08E4DD9 /* WatchVoiceAudio.swift */; };
+		53220B254074A61A3CF9602D /* DotWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BB66F8C132320A06B66C1 /* DotWatchApp.swift */; };
+		5B0B43F1FA6F814DFEFEB42C /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D104D6EC2B5398FBC2F8 /* WatchModel.swift */; };
+		5B4B93919A181C6166AE59A0 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B010534F057D876CAA0A35 /* WatchView.swift */; };
+		5EF204BB0D53B39D353E2D68 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D715857D9132A7D932395 /* CredentialStore.swift */; };
+		60841A141FAA2ECBF835F46C /* DotComplication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9B3A978E951E0C6D5C83435E /* DotComplication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		62FB9ED8A51B52D39AE7EB89 /* WatchVoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814EE816103BB087E16317DA /* WatchVoiceController.swift */; };
+		64F379F6D71A940B6B6C60D1 /* PhoneCharacterBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF194460453ACDF3CF6FE00 /* PhoneCharacterBridge.swift */; };
+		65F901008538C903D95FE2B3 /* swift-log-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 132422FB68620371EC710E63 /* swift-log-NOTICE.txt */; };
+		6616D3CEA1A500E82CBE80FC /* jwt-kit-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 324FE7619796253FA05920AC /* jwt-kit-LICENSE.txt */; };
+		66FF5FC959B096CB4CF05AFE /* CharacterCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E348F1623A88F1FAAD79AD7 /* CharacterCache.swift */; };
+		68FC4593F7173F74A4BB9A44 /* DotComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B93DB796588BFA90C1CA11 /* DotComplication.swift */; };
+		6A0F0811877E18944DD10173 /* PrivateBrowserStaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74100567871FC66F67AAFB /* PrivateBrowserStaging.swift */; };
+		6A1093ED8CED55D2D3B3A5FF /* swift-log-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F76E64BBA103D8605AD89F6 /* swift-log-README.md */; };
+		6D45805E8841AFED103A93F4 /* PrivateWatchChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0597204918391DCF94BF7CE1 /* PrivateWatchChannel.swift */; };
+		6E9CA1E666E5F53D91DF6D6B /* PrivateWatchBuildGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612EA38A3D08B0380BD18CE3 /* PrivateWatchBuildGuard.swift */; };
+		6F4B1D1BC41DCBA01AE40B72 /* NativeVoiceMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86611A247EF027962353A900 /* NativeVoiceMedia.swift */; };
+		72CA8C93748CB2361868DCDD /* swift-log-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CE1500B48F6B2E9EB2F70F9 /* swift-log-LICENSE.txt */; };
+		755A5ADDCB74772D8DABACDD /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B010534F057D876CAA0A35 /* WatchView.swift */; };
+		7569F393BF09FAC367DBCD58 /* swift-log-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0CE1500B48F6B2E9EB2F70F9 /* swift-log-LICENSE.txt */; };
+		76697C00534D94980D973DB4 /* swift-asn1-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5532BE5A57A69E9354B84A4 /* swift-asn1-LICENSE.txt */; };
+		787DFBEF2CB5A9A5F9E59188 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A01C5723A3BE349C695E9DC /* CarPlaySceneDelegate.swift */; };
+		78E7FE58F92DC4FFD1665ABB /* swift-webrtc-README.md in Resources */ = {isa = PBXBuildFile; fileRef = C3EFDADD4FC3ED0F015C8512 /* swift-webrtc-README.md */; };
+		7C0B74442C8E005CF00F3DF7 /* WebRTC-LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = A1D4E2D10BB83DFE1654A232 /* WebRTC-LICENSE.md */; };
+		7DD8B5CF80B3425F5F481425 /* PrivateWatchKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510C1CC12A7F4DBD799B44C /* PrivateWatchKeychain.swift */; };
+		7EEB4BDA5667DCB66B7F3957 /* swift-tls-README.md in Resources */ = {isa = PBXBuildFile; fileRef = C29A6D35E997A5644878CDCF /* swift-tls-README.md */; };
+		7F3C67344C2B7E60878A29AC /* DotWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BB66F8C132320A06B66C1 /* DotWatchApp.swift */; };
+		80463248C51DC72CA6F1638A /* ReadmeDemoDot.png in Resources */ = {isa = PBXBuildFile; fileRef = AC08012912DAC52826D59DEF /* ReadmeDemoDot.png */; };
+		82AEAD48D72E32BD4A22A257 /* DotIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DE86FDC8E94D2E3468089A /* DotIcon.png */; };
+		83D22A0100C283C231E66081 /* PrivateCredentialTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F53CD5651AB802FF29D265 /* PrivateCredentialTransfer.swift */; };
+		850DB3AB91360E1F924766E9 /* DotCompanion in Frameworks */ = {isa = PBXBuildFile; productRef = CF614DF0F2B68B19BCC50C61 /* DotCompanion */; };
+		89530515E2CFDAA20437457A /* PrivateWatchBuildGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612EA38A3D08B0380BD18CE3 /* PrivateWatchBuildGuard.swift */; };
+		89908D393E44161CA488EF9F /* ReadmeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FE322986101CD16AB19F1 /* ReadmeDemo.swift */; };
+		8DBA69DA8071D02824E6F814 /* swift-log-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6F76E64BBA103D8605AD89F6 /* swift-log-README.md */; };
+		9661B7D1EB73EA02E9396074 /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E025208552F44715CC4AE98 /* IdentityStore.swift */; };
+		9EA0A8CF47AAE43C5A0BBA6C /* PrivateWatchKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510C1CC12A7F4DBD799B44C /* PrivateWatchKeychain.swift */; };
+		9ED8E4998D94F52F365B1AC8 /* DirectWatchLink in Frameworks */ = {isa = PBXBuildFile; productRef = C9A9287249CF251806FE1598 /* DirectWatchLink */; };
+		9F96C217022B355182B0CD5D /* DotWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A9825F75DBEA4AA562A2565E /* DotWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A016D420DDE553868C6137AB /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A01C5723A3BE349C695E9DC /* CarPlaySceneDelegate.swift */; };
+		A213B91DF7A2F187B0153FE3 /* swift-asn1-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5532BE5A57A69E9354B84A4 /* swift-asn1-LICENSE.txt */; };
+		A2C704AC1BC423CFBFB2E858 /* swift-networking-README.md in Resources */ = {isa = PBXBuildFile; fileRef = 354804F5F6CFDEB96B967789 /* swift-networking-README.md */; };
+		A41F46CFB7EE289319E31921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EE991538EA7A4C2321B2F /* Assets.xcassets */; };
+		A49A52A42EC6466FD3038FA2 /* swift-log-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27D59857C336E6B27CE526FA /* swift-log-LICENSE.txt */; };
+		A83577B16E6EE74E0BFC7B58 /* jwt-kit-NOTICES.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6386DD82F3C326FE1ABBF20 /* jwt-kit-NOTICES.txt */; };
+		A94606EE0E5148587F5BE7B0 /* PrivateBrowserStaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74100567871FC66F67AAFB /* PrivateBrowserStaging.swift */; };
+		A9A1B0CF624CF37E2901EC21 /* swift-certificates-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C75EFD1FDAA70A08A6EE660 /* swift-certificates-NOTICE.txt */; };
+		AA77B991ABC1D56D9090AB81 /* PhoneWebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = E782F30B157BF9FB96291ACD /* PhoneWebRTC */; };
+		ABD1C6402AA106D8CAA2EF22 /* DotCompanion in Frameworks */ = {isa = PBXBuildFile; productRef = DC6ADD6FB7DCAFCE7AE541E4 /* DotCompanion */; };
+		AC00D22C58B09DCDFFEF4A9E /* PrivateBrowserSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B6A2FEBC0E46AADAABDE9 /* PrivateBrowserSetupView.swift */; };
+		AC76D3B8108D41D2FF4E5B07 /* PrivateCredentialTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F53CD5651AB802FF29D265 /* PrivateCredentialTransfer.swift */; };
+		ACA76971EE682CCCAA96F565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3731C587021733525BC1FC7 /* Assets.xcassets */; };
+		AF93B55FDD785B02F6667525 /* DotCompanion in Frameworks */ = {isa = PBXBuildFile; productRef = A48A8F7442439343735C7BBD /* DotCompanion */; };
+		AFFF90B4512FABCF705B4CA4 /* PrivateWatchAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF05662E34D3A3DE8ABAEB /* PrivateWatchAccess.swift */; };
+		B1EAB3C1532670ECD892499A /* PrivateBrowserStaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC74100567871FC66F67AAFB /* PrivateBrowserStaging.swift */; };
+		B304BF69B684055F9C66F583 /* PrivateWatchKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510C1CC12A7F4DBD799B44C /* PrivateWatchKeychain.swift */; };
+		B38B725EE72248104D9E8C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1EE991538EA7A4C2321B2F /* Assets.xcassets */; };
+		B483B3A972CB25938D937EF0 /* CharacterCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E348F1623A88F1FAAD79AD7 /* CharacterCache.swift */; };
+		BA17571F932BFE5CA086D47D /* PrivateBrowserSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B6A2FEBC0E46AADAABDE9 /* PrivateBrowserSetupView.swift */; };
+		C28FDBB1CF231F6128BD9AF2 /* jwt-kit-NOTICES.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6386DD82F3C326FE1ABBF20 /* jwt-kit-NOTICES.txt */; };
+		C29E2DF7A774FE4DDD504069 /* DirectWatchLink in Frameworks */ = {isa = PBXBuildFile; productRef = C5AD7B8F85BCC70D24780AC3 /* DirectWatchLink */; };
+		C3B15352F96B80BD9E290E30 /* swift-log-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC54006C70D76B667B43A19 /* swift-log-NOTICE.txt */; };
+		C3CE685937ED079B5E5D176C /* ReadmeDemoDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 346E819B47DFC412A97E21C2 /* ReadmeDemoDot.png */; };
+		C4AF7FB4D5D250C858A520A1 /* swift-webrtc-README.md in Resources */ = {isa = PBXBuildFile; fileRef = C3EFDADD4FC3ED0F015C8512 /* swift-webrtc-README.md */; };
+		C95D118F8AC3FCC50F4825DC /* PrivateWatchAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF05662E34D3A3DE8ABAEB /* PrivateWatchAccess.swift */; };
+		CDFEAA43078140B332093771 /* OpenAISignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C453101A082F25AC5EB7CBD /* OpenAISignIn.swift */; };
+		CEA7318C21EC528ED6AB87F4 /* PrivateWatchBuildGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612EA38A3D08B0380BD18CE3 /* PrivateWatchBuildGuard.swift */; };
+		D181658BA4D0BFE0ED5C672B /* DotCompanion in Frameworks */ = {isa = PBXBuildFile; productRef = 242466AA5A926E54953A79E9 /* DotCompanion */; };
+		D32DA5949ED2E24231790BB3 /* ReadmeDemoDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 346E819B47DFC412A97E21C2 /* ReadmeDemoDot.png */; };
+		D354913A466E008122782AC2 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 20D8B1E464373B5A71136039 /* popup.js */; };
+		D3F8234CAF8345A4BD06D3EC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = F472FF4A0DB69D8D328118D0 /* popup.html */; };
+		D63AD2C1293D1B5E6A20BCDF /* PhoneCharacterBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF194460453ACDF3CF6FE00 /* PhoneCharacterBridge.swift */; };
+		D674865CF976B7D7D9186754 /* ReadmeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FE322986101CD16AB19F1 /* ReadmeDemo.swift */; };
+		D698472C747935BBCCDBBF2B /* swift-certificates-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = A36A306DEBB605DE8B480C95 /* swift-certificates-LICENSE.txt */; };
+		D6D041EF0B3F3B4C8C5C67AB /* swift-certificates-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C75EFD1FDAA70A08A6EE660 /* swift-certificates-NOTICE.txt */; };
+		D71CD1DBCE10000BA7B986E3 /* dependency-provenance.json in Resources */ = {isa = PBXBuildFile; fileRef = 455142440DA5F12F628D5FA0 /* dependency-provenance.json */; };
+		D9797B4478B1D92FEE57305F /* PrivateWatchKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510C1CC12A7F4DBD799B44C /* PrivateWatchKeychain.swift */; };
+		DAB2EF0CC034F59F30A38449 /* CarPlayExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910E5CC8481208F3FCD7D8C /* CarPlayExperience.swift */; };
+		DB7FA00753BD95FA4F24E095 /* ReadmeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255FE322986101CD16AB19F1 /* ReadmeDemo.swift */; };
+		DD320FDFA736CA7E2008CEB4 /* PhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AAD097E8757688A268B3 /* PhoneModel.swift */; };
+		DDA552F37B1129AB94AC2959 /* WatchVoiceAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C82BB18A3A0000DF08E4DD9 /* WatchVoiceAudio.swift */; };
+		DE38B8417BFB13B9D959D01F /* swift-tls-README.md in Resources */ = {isa = PBXBuildFile; fileRef = C29A6D35E997A5644878CDCF /* swift-tls-README.md */; };
+		DEA38C4B4D83113336D97951 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 605E19EA0AB1E4E73ADA9D91 /* popup.css */; };
+		E38D0CA21C09E193C7E56656 /* swift-log-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6EC54006C70D76B667B43A19 /* swift-log-NOTICE.txt */; };
+		E5112D2DC549927255D52EBE /* dependency-provenance.json in Resources */ = {isa = PBXBuildFile; fileRef = 455142440DA5F12F628D5FA0 /* dependency-provenance.json */; };
+		E8669EF550588CA683A2279B /* swift-crypto-NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = CD38E59A184574C10302C961 /* swift-crypto-NOTICE.txt */; };
+		EC487202CBCD7824C0E1C5C7 /* CarPlayExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910E5CC8481208F3FCD7D8C /* CarPlayExperience.swift */; };
+		EC57F310B6A6930F41B09D68 /* WatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A47D104D6EC2B5398FBC2F8 /* WatchModel.swift */; };
+		EFE667F4C5014EC876B4A44D /* DotCore in Frameworks */ = {isa = PBXBuildFile; productRef = 7738F2798149EBE3472B0BF9 /* DotCore */; };
+		F1DEC0C09BC933CB302567BD /* PhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE62AAD097E8757688A268B3 /* PhoneModel.swift */; };
+		F21C18A85CA6DFBA0DFE747E /* PrivateCredentialTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F53CD5651AB802FF29D265 /* PrivateCredentialTransfer.swift */; };
+		F25AEB8EA19A2557D458DDB0 /* PrivateWatchBuildGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612EA38A3D08B0380BD18CE3 /* PrivateWatchBuildGuard.swift */; };
+		F7034E19E0C4B00B9D0D2332 /* swift-crypto-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F619E1ADAEF465315EB75031 /* swift-crypto-LICENSE.txt */; };
+		F791B520E09A9D13F4DE6542 /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D715857D9132A7D932395 /* CredentialStore.swift */; };
+		F8830CFE543E9C0F1575D280 /* WebRTC-LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = A1D4E2D10BB83DFE1654A232 /* WebRTC-LICENSE.md */; };
+		FA654345618008E65B03C590 /* DotPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974D65763CD5CD2DB8DE1FDA /* DotPhoneApp.swift */; };
+		FBA5904EE3AE01662BA47E35 /* RemoteWatchMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276CB248E60371E0937A282 /* RemoteWatchMedia.swift */; };
+		FDAD31B81D29D81CE63F9DC4 /* PrivateWatchAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF05662E34D3A3DE8ABAEB /* PrivateWatchAccess.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4188F2776F5CF3A8162354BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98F0E3C2261BCB99B9292AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027BCC7628264F6F7B836F5E;
+			remoteInfo = DotComplication;
+		};
+		62E302312CBB8007F90C7330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98F0E3C2261BCB99B9292AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BADE65631D517FDB5384617B;
+			remoteInfo = DotWatch;
+		};
+		74AB6F0D62490F8F8025EB45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98F0E3C2261BCB99B9292AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDFA7E4BD01AF3C3BE8BC2F;
+			remoteInfo = DotWatchPrivate;
+		};
+		AC43E31D83E00206B59965F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98F0E3C2261BCB99B9292AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C442AB0385CEE416403A18;
+			remoteInfo = DotPrivateSignIn;
+		};
+		D4DA2CB0717E9F06E28CD0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98F0E3C2261BCB99B9292AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 027BCC7628264F6F7B836F5E;
+			remoteInfo = DotComplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1632A8E7357B7137DC6BBC26 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3347E80328D195CE96818A4A /* DotComplication.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A74B4EAC9A4F6E92FA711D2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D5E3ECC1FA3EE063E0DFED1 /* DotPrivateSignIn.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D9275F63F0CD0A25C13B1F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				60841A141FAA2ECBF835F46C /* DotComplication.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D23FB5C7992824495F7C3CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				23DF487938CD616C727F3FEF /* DotWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7CAC541CEA413E45BB80160 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9F96C217022B355182B0CD5D /* DotWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration/Signing.xcconfig; sourceTree = SOURCE_ROOT; };
+		0597204918391DCF94BF7CE1 /* PrivateWatchChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateWatchChannel.swift; sourceTree = "<group>"; };
+		0C75EFD1FDAA70A08A6EE660 /* swift-certificates-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-certificates-NOTICE.txt"; sourceTree = "<group>"; };
+		0CE1500B48F6B2E9EB2F70F9 /* swift-log-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-log-LICENSE.txt"; sourceTree = "<group>"; };
+		0FB4E9FDD3448C50ACD2D989 /* DotPrivateSignIn.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DotPrivateSignIn.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		132422FB68620371EC710E63 /* swift-log-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-log-NOTICE.txt"; sourceTree = "<group>"; };
+		17AAB8240366068FC82AA6C0 /* DotWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A47D104D6EC2B5398FBC2F8 /* WatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModel.swift; sourceTree = "<group>"; };
+		1D8D715857D9132A7D932395 /* CredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
+		20D8B1E464373B5A71136039 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		24F53CD5651AB802FF29D265 /* PrivateCredentialTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateCredentialTransfer.swift; sourceTree = "<group>"; };
+		255FE322986101CD16AB19F1 /* ReadmeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmeDemo.swift; sourceTree = "<group>"; };
+		27D59857C336E6B27CE526FA /* swift-log-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-log-LICENSE.txt"; sourceTree = "<group>"; };
+		287CB82368F1EA1FB1CFC879 /* DirectWatch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DirectWatch; path = Probes/DirectWatch; sourceTree = SOURCE_ROOT; };
+		28F50E1C0D611331C003E2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		324FE7619796253FA05920AC /* jwt-kit-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "jwt-kit-LICENSE.txt"; sourceTree = "<group>"; };
+		32B5A092F804430F85A4A024 /* WatchAudioDiagnostic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAudioDiagnostic.swift; sourceTree = "<group>"; };
+		346E819B47DFC412A97E21C2 /* ReadmeDemoDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReadmeDemoDot.png; sourceTree = "<group>"; };
+		3510C1CC12A7F4DBD799B44C /* PrivateWatchKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateWatchKeychain.swift; sourceTree = "<group>"; };
+		354804F5F6CFDEB96B967789 /* swift-networking-README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "swift-networking-README.md"; sourceTree = "<group>"; };
+		3F9A87DDCAEEF4D594B9828F /* PhoneWebRTC */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PhoneWebRTC; path = Packages/PhoneWebRTC; sourceTree = SOURCE_ROOT; };
+		3FB61AED88CB1177973F0149 /* swift-asn1-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-asn1-NOTICE.txt"; sourceTree = "<group>"; };
+		42AE8AA0ADA0C4032F5D8C2D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		455142440DA5F12F628D5FA0 /* dependency-provenance.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "dependency-provenance.json"; sourceTree = "<group>"; };
+		527B6A2FEBC0E46AADAABDE9 /* PrivateBrowserSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBrowserSetupView.swift; sourceTree = "<group>"; };
+		552F30A74687072A49EDA0D9 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		5A1EE991538EA7A4C2321B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		605E19EA0AB1E4E73ADA9D91 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		612EA38A3D08B0380BD18CE3 /* PrivateWatchBuildGuard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateWatchBuildGuard.swift; sourceTree = "<group>"; };
+		6A01C5723A3BE349C695E9DC /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		6C453101A082F25AC5EB7CBD /* OpenAISignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAISignIn.swift; sourceTree = "<group>"; };
+		6EC54006C70D76B667B43A19 /* swift-log-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-log-NOTICE.txt"; sourceTree = "<group>"; };
+		6F76E64BBA103D8605AD89F6 /* swift-log-README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "swift-log-README.md"; sourceTree = "<group>"; };
+		76DE86FDC8E94D2E3468089A /* DotIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DotIcon.png; sourceTree = "<group>"; };
+		7C82BB18A3A0000DF08E4DD9 /* WatchVoiceAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVoiceAudio.swift; sourceTree = "<group>"; };
+		7E025208552F44715CC4AE98 /* IdentityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityStore.swift; sourceTree = "<group>"; };
+		7E348F1623A88F1FAAD79AD7 /* CharacterCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCache.swift; sourceTree = "<group>"; };
+		814EE816103BB087E16317DA /* WatchVoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchVoiceController.swift; sourceTree = "<group>"; };
+		85E2129582079A273FEDED28 /* DotPhone.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DotPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86611A247EF027962353A900 /* NativeVoiceMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeVoiceMedia.swift; sourceTree = "<group>"; };
+		974D65763CD5CD2DB8DE1FDA /* DotPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotPhoneApp.swift; sourceTree = "<group>"; };
+		9B3A978E951E0C6D5C83435E /* DotComplication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DotComplication.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAF05662E34D3A3DE8ABAEB /* PrivateWatchAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateWatchAccess.swift; sourceTree = "<group>"; };
+		A1D4E2D10BB83DFE1654A232 /* WebRTC-LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "WebRTC-LICENSE.md"; sourceTree = "<group>"; };
+		A36A306DEBB605DE8B480C95 /* swift-certificates-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-certificates-LICENSE.txt"; sourceTree = "<group>"; };
+		A3B9AF7FBE881BB7DF605C29 /* dot_watch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dot_watch; path = .; sourceTree = SOURCE_ROOT; };
+		A9825F75DBEA4AA562A2565E /* DotWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC08012912DAC52826D59DEF /* ReadmeDemoDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReadmeDemoDot.png; sourceTree = "<group>"; };
+		B3731C587021733525BC1FC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB77082EC06457013BE32EF9 /* DotPhone.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DotPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04E90F221A1C5137A0A05AC /* DotAuth */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DotAuth; path = Packages/DotAuth; sourceTree = SOURCE_ROOT; };
+		C29A6D35E997A5644878CDCF /* swift-tls-README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "swift-tls-README.md"; sourceTree = "<group>"; };
+		C3EFDADD4FC3ED0F015C8512 /* swift-webrtc-README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "swift-webrtc-README.md"; sourceTree = "<group>"; };
+		C6F88CB225FD734E620E5A5B /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		C910E5CC8481208F3FCD7D8C /* CarPlayExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayExperience.swift; sourceTree = "<group>"; };
+		CD38E59A184574C10302C961 /* swift-crypto-NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-crypto-NOTICE.txt"; sourceTree = "<group>"; };
+		CDF194460453ACDF3CF6FE00 /* PhoneCharacterBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCharacterBridge.swift; sourceTree = "<group>"; };
+		D276CB248E60371E0937A282 /* RemoteWatchMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWatchMedia.swift; sourceTree = "<group>"; };
+		D3B93DB796588BFA90C1CA11 /* DotComplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotComplication.swift; sourceTree = "<group>"; };
+		DE62AAD097E8757688A268B3 /* PhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModel.swift; sourceTree = "<group>"; };
+		DF5541BCFFCCC9744C26AB26 /* swift-ssl-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-ssl-LICENSE.txt"; sourceTree = "<group>"; };
+		E07BB66F8C132320A06B66C1 /* DotWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotWatchApp.swift; sourceTree = "<group>"; };
+		F472FF4A0DB69D8D328118D0 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		F5532BE5A57A69E9354B84A4 /* swift-asn1-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-asn1-LICENSE.txt"; sourceTree = "<group>"; };
+		F619E1ADAEF465315EB75031 /* swift-crypto-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "swift-crypto-LICENSE.txt"; sourceTree = "<group>"; };
+		F6386DD82F3C326FE1ABBF20 /* jwt-kit-NOTICES.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "jwt-kit-NOTICES.txt"; sourceTree = "<group>"; };
+		F7B010534F057D876CAA0A35 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
+		FC74100567871FC66F67AAFB /* PrivateBrowserStaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBrowserStaging.swift; sourceTree = "<group>"; };
+		FD471392E1E5AB05973BB75C /* WatchAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WatchAudio; path = Probes/WatchAudio; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		026C6ECCC64EACF2E1D69D42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850DB3AB91360E1F924766E9 /* DotCompanion in Frameworks */,
+				45B583CBCEA8B50EC84B44AF /* WatchAudioKit in Frameworks */,
+				C29E2DF7A774FE4DDD504069 /* DirectWatchLink in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		373E4C4E68F28E1683158EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF93B55FDD785B02F6667525 /* DotCompanion in Frameworks */,
+				4EEC925C569D84111BA64625 /* WatchAudioKit in Frameworks */,
+				9ED8E4998D94F52F365B1AC8 /* DirectWatchLink in Frameworks */,
+				119A6F5F4C2BB4CDC82DFE32 /* DotCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6493979F2A451010637756AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE667F4C5014EC876B4A44D /* DotCore in Frameworks */,
+				D181658BA4D0BFE0ED5C672B /* DotCompanion in Frameworks */,
+				3CEB72E9DFF10E1B93772ED7 /* DotAuth in Frameworks */,
+				AA77B991ABC1D56D9090AB81 /* PhoneWebRTC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8625F096B9CB58BEDEB10B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354040C95A1759159D620DAB /* DotCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955ED23B2094DF75A09F397E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0466EB15AE79936CEFEF6418 /* DotCore in Frameworks */,
+				ABD1C6402AA106D8CAA2EF22 /* DotCompanion in Frameworks */,
+				161EF7C18E283A8619B8269F /* DotAuth in Frameworks */,
+				4EC8C86885568596F1CA0692 /* PhoneWebRTC in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157CAE622DF8B8EA85205778 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				76DE86FDC8E94D2E3468089A /* DotIcon.png */,
+				42AE8AA0ADA0C4032F5D8C2D /* manifest.json */,
+				605E19EA0AB1E4E73ADA9D91 /* popup.css */,
+				F472FF4A0DB69D8D328118D0 /* popup.html */,
+				20D8B1E464373B5A71136039 /* popup.js */,
+			);
+			name = Resources;
+			path = Apps/PrivateSafari/Resources;
+			sourceTree = "<group>";
+		};
+		1F892010640291AAD6326523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B3A978E951E0C6D5C83435E /* DotComplication.appex */,
+				BB77082EC06457013BE32EF9 /* DotPhone.app */,
+				85E2129582079A273FEDED28 /* DotPhone.app */,
+				0FB4E9FDD3448C50ACD2D989 /* DotPrivateSignIn.appex */,
+				17AAB8240366068FC82AA6C0 /* DotWatch.app */,
+				A9825F75DBEA4AA562A2565E /* DotWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31C8C23DA1A6CC94AB3CC5B1 /* PrivateWatch */ = {
+			isa = PBXGroup;
+			children = (
+				9CAF05662E34D3A3DE8ABAEB /* PrivateWatchAccess.swift */,
+				612EA38A3D08B0380BD18CE3 /* PrivateWatchBuildGuard.swift */,
+				0597204918391DCF94BF7CE1 /* PrivateWatchChannel.swift */,
+				3510C1CC12A7F4DBD799B44C /* PrivateWatchKeychain.swift */,
+			);
+			name = PrivateWatch;
+			path = Apps/PrivateWatch;
+			sourceTree = "<group>";
+		};
+		32F948D75BD87412FEC8294C = {
+			isa = PBXGroup;
+			children = (
+				66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */,
+				BA0A47C540E3EC36B7A2E704 /* Notices */,
+				72C04F756C762DD53F1F358C /* Packages */,
+				6F4603348B297A9BF47ABC8D /* Phone */,
+				754D074ADB6DC286A8A8D0B7 /* PrivateSafari */,
+				31C8C23DA1A6CC94AB3CC5B1 /* PrivateWatch */,
+				157CAE622DF8B8EA85205778 /* Resources */,
+				EBD9663E47B5A486A6E11143 /* ScreenshotDemo */,
+				F927623C754C64CAD9FF251D /* Watch */,
+				6B8C964991AED5F5FCA0F990 /* WatchComplication */,
+				1F892010640291AAD6326523 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4541976182BD7073B1594C01 /* PrivateSetup */ = {
+			isa = PBXGroup;
+			children = (
+				FC74100567871FC66F67AAFB /* PrivateBrowserStaging.swift */,
+				24F53CD5651AB802FF29D265 /* PrivateCredentialTransfer.swift */,
+			);
+			path = PrivateSetup;
+			sourceTree = "<group>";
+		};
+		6B8C964991AED5F5FCA0F990 /* WatchComplication */ = {
+			isa = PBXGroup;
+			children = (
+				D3B93DB796588BFA90C1CA11 /* DotComplication.swift */,
+				28F50E1C0D611331C003E2A1 /* Info.plist */,
+			);
+			name = WatchComplication;
+			path = Apps/WatchComplication;
+			sourceTree = "<group>";
+		};
+		6F4603348B297A9BF47ABC8D /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				5A1EE991538EA7A4C2321B2F /* Assets.xcassets */,
+				C910E5CC8481208F3FCD7D8C /* CarPlayExperience.swift */,
+				6A01C5723A3BE349C695E9DC /* CarPlaySceneDelegate.swift */,
+				7E348F1623A88F1FAAD79AD7 /* CharacterCache.swift */,
+				1D8D715857D9132A7D932395 /* CredentialStore.swift */,
+				974D65763CD5CD2DB8DE1FDA /* DotPhoneApp.swift */,
+				7E025208552F44715CC4AE98 /* IdentityStore.swift */,
+				86611A247EF027962353A900 /* NativeVoiceMedia.swift */,
+				6C453101A082F25AC5EB7CBD /* OpenAISignIn.swift */,
+				CDF194460453ACDF3CF6FE00 /* PhoneCharacterBridge.swift */,
+				DE62AAD097E8757688A268B3 /* PhoneModel.swift */,
+				C6F88CB225FD734E620E5A5B /* PhoneView.swift */,
+				527B6A2FEBC0E46AADAABDE9 /* PrivateBrowserSetupView.swift */,
+				D276CB248E60371E0937A282 /* RemoteWatchMedia.swift */,
+				9D180872D632ED072D35EA37 /* Notices */,
+				4541976182BD7073B1594C01 /* PrivateSetup */,
+				EE447B01E412A0D91D07F04F /* Resources */,
+			);
+			name = Phone;
+			path = Apps/Phone;
+			sourceTree = "<group>";
+		};
+		71DFB711E8A2318564112E17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC08012912DAC52826D59DEF /* ReadmeDemoDot.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		72C04F756C762DD53F1F358C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				287CB82368F1EA1FB1CFC879 /* DirectWatch */,
+				A3B9AF7FBE881BB7DF605C29 /* dot_watch */,
+				C04E90F221A1C5137A0A05AC /* DotAuth */,
+				3F9A87DDCAEEF4D594B9828F /* PhoneWebRTC */,
+				FD471392E1E5AB05973BB75C /* WatchAudio */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		754D074ADB6DC286A8A8D0B7 /* PrivateSafari */ = {
+			isa = PBXGroup;
+			children = (
+				552F30A74687072A49EDA0D9 /* SafariWebExtensionHandler.swift */,
+			);
+			name = PrivateSafari;
+			path = Apps/PrivateSafari;
+			sourceTree = "<group>";
+		};
+		9D180872D632ED072D35EA37 /* Notices */ = {
+			isa = PBXGroup;
+			children = (
+				A1D4E2D10BB83DFE1654A232 /* WebRTC-LICENSE.md */,
+				AF32984089B1529AC551F3D1 /* OpenAI-SignIn */,
+			);
+			path = Notices;
+			sourceTree = "<group>";
+		};
+		AF32984089B1529AC551F3D1 /* OpenAI-SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				324FE7619796253FA05920AC /* jwt-kit-LICENSE.txt */,
+				F6386DD82F3C326FE1ABBF20 /* jwt-kit-NOTICES.txt */,
+				F5532BE5A57A69E9354B84A4 /* swift-asn1-LICENSE.txt */,
+				3FB61AED88CB1177973F0149 /* swift-asn1-NOTICE.txt */,
+				A36A306DEBB605DE8B480C95 /* swift-certificates-LICENSE.txt */,
+				0C75EFD1FDAA70A08A6EE660 /* swift-certificates-NOTICE.txt */,
+				F619E1ADAEF465315EB75031 /* swift-crypto-LICENSE.txt */,
+				CD38E59A184574C10302C961 /* swift-crypto-NOTICE.txt */,
+				27D59857C336E6B27CE526FA /* swift-log-LICENSE.txt */,
+				132422FB68620371EC710E63 /* swift-log-NOTICE.txt */,
+			);
+			path = "OpenAI-SignIn";
+			sourceTree = "<group>";
+		};
+		BA0A47C540E3EC36B7A2E704 /* Notices */ = {
+			isa = PBXGroup;
+			children = (
+				455142440DA5F12F628D5FA0 /* dependency-provenance.json */,
+				0CE1500B48F6B2E9EB2F70F9 /* swift-log-LICENSE.txt */,
+				6EC54006C70D76B667B43A19 /* swift-log-NOTICE.txt */,
+				6F76E64BBA103D8605AD89F6 /* swift-log-README.md */,
+				354804F5F6CFDEB96B967789 /* swift-networking-README.md */,
+				DF5541BCFFCCC9744C26AB26 /* swift-ssl-LICENSE.txt */,
+				C29A6D35E997A5644878CDCF /* swift-tls-README.md */,
+				C3EFDADD4FC3ED0F015C8512 /* swift-webrtc-README.md */,
+			);
+			name = Notices;
+			path = Apps/Watch/Notices;
+			sourceTree = "<group>";
+		};
+		EBD9663E47B5A486A6E11143 /* ScreenshotDemo */ = {
+			isa = PBXGroup;
+			children = (
+				255FE322986101CD16AB19F1 /* ReadmeDemo.swift */,
+			);
+			name = ScreenshotDemo;
+			path = Apps/ScreenshotDemo;
+			sourceTree = "<group>";
+		};
+		EE447B01E412A0D91D07F04F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				346E819B47DFC412A97E21C2 /* ReadmeDemoDot.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F927623C754C64CAD9FF251D /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				B3731C587021733525BC1FC7 /* Assets.xcassets */,
+				E07BB66F8C132320A06B66C1 /* DotWatchApp.swift */,
+				32B5A092F804430F85A4A024 /* WatchAudioDiagnostic.swift */,
+				1A47D104D6EC2B5398FBC2F8 /* WatchModel.swift */,
+				F7B010534F057D876CAA0A35 /* WatchView.swift */,
+				7C82BB18A3A0000DF08E4DD9 /* WatchVoiceAudio.swift */,
+				814EE816103BB087E16317DA /* WatchVoiceController.swift */,
+				71DFB711E8A2318564112E17 /* Resources */,
+			);
+			name = Watch;
+			path = Apps/Watch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		027BCC7628264F6F7B836F5E /* DotComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B67CFC902E137B116DD4F5B /* Build configuration list for PBXNativeTarget "DotComplication" */;
+			buildPhases = (
+				D1913D3F91B679B4E1DF82A5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotComplication;
+			packageProductDependencies = (
+			);
+			productName = DotComplication;
+			productReference = 9B3A978E951E0C6D5C83435E /* DotComplication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		14C442AB0385CEE416403A18 /* DotPrivateSignIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 706C9B444E3237972A8B88CA /* Build configuration list for PBXNativeTarget "DotPrivateSignIn" */;
+			buildPhases = (
+				789809484EFE6E01DEA8FFB1 /* Sources */,
+				033C2C1DCA3CC32A12743527 /* Resources */,
+				8625F096B9CB58BEDEB10B20 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotPrivateSignIn;
+			packageProductDependencies = (
+				421245BCD3DD4CE6C9D22B32 /* DotCore */,
+			);
+			productName = DotPrivateSignIn;
+			productReference = 0FB4E9FDD3448C50ACD2D989 /* DotPrivateSignIn.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4FDFA7E4BD01AF3C3BE8BC2F /* DotWatchPrivate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311BADB1745BE7237F8AA735 /* Build configuration list for PBXNativeTarget "DotWatchPrivate" */;
+			buildPhases = (
+				A5BA4B49AA7A86157729F1E9 /* Sources */,
+				C8A7A55C20E7F4ECDB09C102 /* Resources */,
+				373E4C4E68F28E1683158EF1 /* Frameworks */,
+				74D9275F63F0CD0A25C13B1F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB1D80AAE628453383ED4DA /* PBXTargetDependency */,
+			);
+			name = DotWatchPrivate;
+			packageProductDependencies = (
+				A48A8F7442439343735C7BBD /* DotCompanion */,
+				8EF73DCFC33AEB81A220CE37 /* WatchAudioKit */,
+				C9A9287249CF251806FE1598 /* DirectWatchLink */,
+				85D495BEF9F486A500D4DA9C /* DotCore */,
+			);
+			productName = DotWatchPrivate;
+			productReference = A9825F75DBEA4AA562A2565E /* DotWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73B0208EAF53EFEDF3674199 /* DotPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E48C427364F444B764CC079 /* Build configuration list for PBXNativeTarget "DotPhone" */;
+			buildPhases = (
+				DBC7A74BDAAE6BA21E016580 /* Sources */,
+				AB0680195FC881540247049A /* Resources */,
+				6493979F2A451010637756AF /* Frameworks */,
+				7D23FB5C7992824495F7C3CA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F990641E4E400F71CC1097E /* PBXTargetDependency */,
+			);
+			name = DotPhone;
+			packageProductDependencies = (
+				7738F2798149EBE3472B0BF9 /* DotCore */,
+				242466AA5A926E54953A79E9 /* DotCompanion */,
+				BEBDC4B6AE54EB7E09DFD18F /* DotAuth */,
+				E782F30B157BF9FB96291ACD /* PhoneWebRTC */,
+			);
+			productName = DotPhone;
+			productReference = BB77082EC06457013BE32EF9 /* DotPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE3FDD93C39FC5ACAA339519 /* DotPhonePrivate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B01CEEF161A5DCB8D16111E /* Build configuration list for PBXNativeTarget "DotPhonePrivate" */;
+			buildPhases = (
+				D2EC4F0EEF98F747C881B510 /* Sources */,
+				06EF6D7329CA458C159FFEE7 /* Resources */,
+				955ED23B2094DF75A09F397E /* Frameworks */,
+				4A74B4EAC9A4F6E92FA711D2 /* Embed Foundation Extensions */,
+				F7CAC541CEA413E45BB80160 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28B9303CE083D3DD521000F /* PBXTargetDependency */,
+				C3846E9513DA55277CD94F80 /* PBXTargetDependency */,
+			);
+			name = DotPhonePrivate;
+			packageProductDependencies = (
+				C0D2A4193E703E0A0D511AC6 /* DotCore */,
+				DC6ADD6FB7DCAFCE7AE541E4 /* DotCompanion */,
+				6411A146BDA75F20DDDC30BF /* DotAuth */,
+				4E3A567DFC9653A0AF80AB86 /* PhoneWebRTC */,
+			);
+			productName = DotPhonePrivate;
+			productReference = 85E2129582079A273FEDED28 /* DotPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BADE65631D517FDB5384617B /* DotWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B8EC954D617CEE25BA412E2 /* Build configuration list for PBXNativeTarget "DotWatch" */;
+			buildPhases = (
+				4CCF7BC2417D9FE2F4CCAE26 /* Sources */,
+				D2DE972346AE9DAC5F1225C6 /* Resources */,
+				026C6ECCC64EACF2E1D69D42 /* Frameworks */,
+				1632A8E7357B7137DC6BBC26 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64B0866C0CC790408368798 /* PBXTargetDependency */,
+			);
+			name = DotWatch;
+			packageProductDependencies = (
+				CF614DF0F2B68B19BCC50C61 /* DotCompanion */,
+				E2F71DD96F153643B68C110E /* WatchAudioKit */,
+				C5AD7B8F85BCC70D24780AC3 /* DirectWatchLink */,
+			);
+			productName = DotWatch;
+			productReference = 17AAB8240366068FC82AA6C0 /* DotWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98F0E3C2261BCB99B9292AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					027BCC7628264F6F7B836F5E = {
+						DevelopmentTeam = YOUR_APPLE_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					14C442AB0385CEE416403A18 = {
+						DevelopmentTeam = YOUR_APPLE_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					4FDFA7E4BD01AF3C3BE8BC2F = {
+						DevelopmentTeam = YOUR_APPLE_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					73B0208EAF53EFEDF3674199 = {
+						DevelopmentTeam = YOUR_APPLE_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					AE3FDD93C39FC5ACAA339519 = {
+						DevelopmentTeam = YOUR_APPLE_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					BADE65631D517FDB5384617B = {
+						DevelopmentTeam = YOUR_APPLE_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18DFA76716CD06B3DF9E0528 /* Build configuration list for PBXProject "DotWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 32F948D75BD87412FEC8294C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				956556FD2B1A86C422EC2F72 /* XCLocalSwiftPackageReference "Probes/DirectWatch" */,
+				624E1FB7C64A7477C83C83C0 /* XCLocalSwiftPackageReference "Packages/DotAuth" */,
+				23568066BF867187FBBD5021 /* XCLocalSwiftPackageReference "." */,
+				CAC8A6DD8833754FD6BF8FF1 /* XCLocalSwiftPackageReference "Packages/PhoneWebRTC" */,
+				8D2FB83504D5D2CD1AB74330 /* XCLocalSwiftPackageReference "Probes/WatchAudio" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1F892010640291AAD6326523 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				027BCC7628264F6F7B836F5E /* DotComplication */,
+				73B0208EAF53EFEDF3674199 /* DotPhone */,
+				AE3FDD93C39FC5ACAA339519 /* DotPhonePrivate */,
+				14C442AB0385CEE416403A18 /* DotPrivateSignIn */,
+				BADE65631D517FDB5384617B /* DotWatch */,
+				4FDFA7E4BD01AF3C3BE8BC2F /* DotWatchPrivate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		033C2C1DCA3CC32A12743527 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82AEAD48D72E32BD4A22A257 /* DotIcon.png in Resources */,
+				123D4F4B54AC27B16976EAA6 /* manifest.json in Resources */,
+				DEA38C4B4D83113336D97951 /* popup.css in Resources */,
+				D3F8234CAF8345A4BD06D3EC /* popup.html in Resources */,
+				D354913A466E008122782AC2 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06EF6D7329CA458C159FFEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38B725EE72248104D9E8C54 /* Assets.xcassets in Resources */,
+				D32DA5949ED2E24231790BB3 /* ReadmeDemoDot.png in Resources */,
+				7C0B74442C8E005CF00F3DF7 /* WebRTC-LICENSE.md in Resources */,
+				6616D3CEA1A500E82CBE80FC /* jwt-kit-LICENSE.txt in Resources */,
+				C28FDBB1CF231F6128BD9AF2 /* jwt-kit-NOTICES.txt in Resources */,
+				76697C00534D94980D973DB4 /* swift-asn1-LICENSE.txt in Resources */,
+				008E782F4DB2546C81EACAB4 /* swift-asn1-NOTICE.txt in Resources */,
+				042A724D39E7E341A95905C6 /* swift-certificates-LICENSE.txt in Resources */,
+				A9A1B0CF624CF37E2901EC21 /* swift-certificates-NOTICE.txt in Resources */,
+				F7034E19E0C4B00B9D0D2332 /* swift-crypto-LICENSE.txt in Resources */,
+				E8669EF550588CA683A2279B /* swift-crypto-NOTICE.txt in Resources */,
+				2118656E4C011857C76F5116 /* swift-log-LICENSE.txt in Resources */,
+				27C174B216FA0611DEA85836 /* swift-log-NOTICE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0680195FC881540247049A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41F46CFB7EE289319E31921 /* Assets.xcassets in Resources */,
+				C3CE685937ED079B5E5D176C /* ReadmeDemoDot.png in Resources */,
+				F8830CFE543E9C0F1575D280 /* WebRTC-LICENSE.md in Resources */,
+				1CAF97C9A98DD3E64D9601D9 /* jwt-kit-LICENSE.txt in Resources */,
+				A83577B16E6EE74E0BFC7B58 /* jwt-kit-NOTICES.txt in Resources */,
+				A213B91DF7A2F187B0153FE3 /* swift-asn1-LICENSE.txt in Resources */,
+				4F7377E39AEBF07E1514A5CE /* swift-asn1-NOTICE.txt in Resources */,
+				D698472C747935BBCCDBBF2B /* swift-certificates-LICENSE.txt in Resources */,
+				D6D041EF0B3F3B4C8C5C67AB /* swift-certificates-NOTICE.txt in Resources */,
+				2D326FE6A2ABDD20BE8B15D6 /* swift-crypto-LICENSE.txt in Resources */,
+				0FB12BA4474B303224B881FA /* swift-crypto-NOTICE.txt in Resources */,
+				A49A52A42EC6466FD3038FA2 /* swift-log-LICENSE.txt in Resources */,
+				65F901008538C903D95FE2B3 /* swift-log-NOTICE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8A7A55C20E7F4ECDB09C102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA76971EE682CCCAA96F565 /* Assets.xcassets in Resources */,
+				4FFB6535BA14A5F5E6AF4378 /* ReadmeDemoDot.png in Resources */,
+				D71CD1DBCE10000BA7B986E3 /* dependency-provenance.json in Resources */,
+				7569F393BF09FAC367DBCD58 /* swift-log-LICENSE.txt in Resources */,
+				C3B15352F96B80BD9E290E30 /* swift-log-NOTICE.txt in Resources */,
+				6A1093ED8CED55D2D3B3A5FF /* swift-log-README.md in Resources */,
+				3F13D3D3C6366C82855DD34B /* swift-networking-README.md in Resources */,
+				0A649685AD84BAAE2A1B9835 /* swift-ssl-LICENSE.txt in Resources */,
+				DE38B8417BFB13B9D959D01F /* swift-tls-README.md in Resources */,
+				C4AF7FB4D5D250C858A520A1 /* swift-webrtc-README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DE972346AE9DAC5F1225C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B62B2F624E9B845A570946 /* Assets.xcassets in Resources */,
+				80463248C51DC72CA6F1638A /* ReadmeDemoDot.png in Resources */,
+				E5112D2DC549927255D52EBE /* dependency-provenance.json in Resources */,
+				72CA8C93748CB2361868DCDD /* swift-log-LICENSE.txt in Resources */,
+				E38D0CA21C09E193C7E56656 /* swift-log-NOTICE.txt in Resources */,
+				8DBA69DA8071D02824E6F814 /* swift-log-README.md in Resources */,
+				A2C704AC1BC423CFBFB2E858 /* swift-networking-README.md in Resources */,
+				4A7A1C3A61B6E62B172C0BAF /* swift-ssl-LICENSE.txt in Resources */,
+				7EEB4BDA5667DCB66B7F3957 /* swift-tls-README.md in Resources */,
+				78E7FE58F92DC4FFD1665ABB /* swift-webrtc-README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CCF7BC2417D9FE2F4CCAE26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3C67344C2B7E60878A29AC /* DotWatchApp.swift in Sources */,
+				FDAD31B81D29D81CE63F9DC4 /* PrivateWatchAccess.swift in Sources */,
+				F25AEB8EA19A2557D458DDB0 /* PrivateWatchBuildGuard.swift in Sources */,
+				2D1C418472E6A8D77612E472 /* PrivateWatchChannel.swift in Sources */,
+				B304BF69B684055F9C66F583 /* PrivateWatchKeychain.swift in Sources */,
+				89908D393E44161CA488EF9F /* ReadmeDemo.swift in Sources */,
+				4596414745F78963CA911085 /* WatchAudioDiagnostic.swift in Sources */,
+				EC57F310B6A6930F41B09D68 /* WatchModel.swift in Sources */,
+				5B4B93919A181C6166AE59A0 /* WatchView.swift in Sources */,
+				DDA552F37B1129AB94AC2959 /* WatchVoiceAudio.swift in Sources */,
+				4914A967F7DE63C986D055EE /* WatchVoiceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		789809484EFE6E01DEA8FFB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EAB3C1532670ECD892499A /* PrivateBrowserStaging.swift in Sources */,
+				AC76D3B8108D41D2FF4E5B07 /* PrivateCredentialTransfer.swift in Sources */,
+				1E2A017AC89CF96C213302AB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA4B49AA7A86157729F1E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53220B254074A61A3CF9602D /* DotWatchApp.swift in Sources */,
+				AFFF90B4512FABCF705B4CA4 /* PrivateWatchAccess.swift in Sources */,
+				CEA7318C21EC528ED6AB87F4 /* PrivateWatchBuildGuard.swift in Sources */,
+				2AC9502C0619289441E21E63 /* PrivateWatchChannel.swift in Sources */,
+				D9797B4478B1D92FEE57305F /* PrivateWatchKeychain.swift in Sources */,
+				3D89D5D1F3CD369266BF54C0 /* ReadmeDemo.swift in Sources */,
+				3C5272DAC9730A6A7B3CA8C9 /* WatchAudioDiagnostic.swift in Sources */,
+				5B0B43F1FA6F814DFEFEB42C /* WatchModel.swift in Sources */,
+				755A5ADDCB74772D8DABACDD /* WatchView.swift in Sources */,
+				52B7946B66F3A6F4A1C47867 /* WatchVoiceAudio.swift in Sources */,
+				62FB9ED8A51B52D39AE7EB89 /* WatchVoiceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1913D3F91B679B4E1DF82A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FC4593F7173F74A4BB9A44 /* DotComplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2EC4F0EEF98F747C881B510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB2EF0CC034F59F30A38449 /* CarPlayExperience.swift in Sources */,
+				787DFBEF2CB5A9A5F9E59188 /* CarPlaySceneDelegate.swift in Sources */,
+				B483B3A972CB25938D937EF0 /* CharacterCache.swift in Sources */,
+				F791B520E09A9D13F4DE6542 /* CredentialStore.swift in Sources */,
+				21B8DBAAB3F44C8ABFBCBBD8 /* DotPhoneApp.swift in Sources */,
+				9661B7D1EB73EA02E9396074 /* IdentityStore.swift in Sources */,
+				1A69D604018A4DEBDA715843 /* NativeVoiceMedia.swift in Sources */,
+				CDFEAA43078140B332093771 /* OpenAISignIn.swift in Sources */,
+				D63AD2C1293D1B5E6A20BCDF /* PhoneCharacterBridge.swift in Sources */,
+				F1DEC0C09BC933CB302567BD /* PhoneModel.swift in Sources */,
+				48EF3FABB835B6E4303FE8CD /* PhoneView.swift in Sources */,
+				AC00D22C58B09DCDFFEF4A9E /* PrivateBrowserSetupView.swift in Sources */,
+				6A0F0811877E18944DD10173 /* PrivateBrowserStaging.swift in Sources */,
+				83D22A0100C283C231E66081 /* PrivateCredentialTransfer.swift in Sources */,
+				C95D118F8AC3FCC50F4825DC /* PrivateWatchAccess.swift in Sources */,
+				89530515E2CFDAA20437457A /* PrivateWatchBuildGuard.swift in Sources */,
+				342D3E5D8AC7AAC3F101C323 /* PrivateWatchChannel.swift in Sources */,
+				7DD8B5CF80B3425F5F481425 /* PrivateWatchKeychain.swift in Sources */,
+				DB7FA00753BD95FA4F24E095 /* ReadmeDemo.swift in Sources */,
+				4D6D830004256F10BD9166B4 /* RemoteWatchMedia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC7A74BDAAE6BA21E016580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC487202CBCD7824C0E1C5C7 /* CarPlayExperience.swift in Sources */,
+				A016D420DDE553868C6137AB /* CarPlaySceneDelegate.swift in Sources */,
+				66FF5FC959B096CB4CF05AFE /* CharacterCache.swift in Sources */,
+				5EF204BB0D53B39D353E2D68 /* CredentialStore.swift in Sources */,
+				FA654345618008E65B03C590 /* DotPhoneApp.swift in Sources */,
+				1EEB7BD6BCE59091298FC909 /* IdentityStore.swift in Sources */,
+				6F4B1D1BC41DCBA01AE40B72 /* NativeVoiceMedia.swift in Sources */,
+				08D182E07A7067A0758FB7EC /* OpenAISignIn.swift in Sources */,
+				64F379F6D71A940B6B6C60D1 /* PhoneCharacterBridge.swift in Sources */,
+				DD320FDFA736CA7E2008CEB4 /* PhoneModel.swift in Sources */,
+				46DA9177BCDB57CCCF04AEB1 /* PhoneView.swift in Sources */,
+				BA17571F932BFE5CA086D47D /* PrivateBrowserSetupView.swift in Sources */,
+				A94606EE0E5148587F5BE7B0 /* PrivateBrowserStaging.swift in Sources */,
+				F21C18A85CA6DFBA0DFE747E /* PrivateCredentialTransfer.swift in Sources */,
+				3B7D3474F79064ADECE9A604 /* PrivateWatchAccess.swift in Sources */,
+				6E9CA1E666E5F53D91DF6D6B /* PrivateWatchBuildGuard.swift in Sources */,
+				6D45805E8841AFED103A93F4 /* PrivateWatchChannel.swift in Sources */,
+				9EA0A8CF47AAE43C5A0BBA6C /* PrivateWatchKeychain.swift in Sources */,
+				D674865CF976B7D7D9186754 /* ReadmeDemo.swift in Sources */,
+				FBA5904EE3AE01662BA47E35 /* RemoteWatchMedia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F990641E4E400F71CC1097E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BADE65631D517FDB5384617B /* DotWatch */;
+			targetProxy = 62E302312CBB8007F90C7330 /* PBXContainerItemProxy */;
+		};
+		C3846E9513DA55277CD94F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C442AB0385CEE416403A18 /* DotPrivateSignIn */;
+			targetProxy = AC43E31D83E00206B59965F8 /* PBXContainerItemProxy */;
+		};
+		D64B0866C0CC790408368798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027BCC7628264F6F7B836F5E /* DotComplication */;
+			targetProxy = D4DA2CB0717E9F06E28CD0F3 /* PBXContainerItemProxy */;
+		};
+		F28B9303CE083D3DD521000F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDFA7E4BD01AF3C3BE8BC2F /* DotWatchPrivate */;
+			targetProxy = 74AB6F0D62490F8F8025EB45 /* PBXContainerItemProxy */;
+		};
+		FAB1D80AAE628453383ED4DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 027BCC7628264F6F7B836F5E /* DotComplication */;
+			targetProxy = 4188F2776F5CF3A8162354BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		004DA2198D788A0018A49B5B /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateCarPlay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PrivateCarPlay;
+		};
+		0111EA2DC9B4F937379F1296 /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateCarPlay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = CarPlay;
+		};
+		09435285E92B9E47FBF629BF /* Private */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Private;
+		};
+		16CEB3F7DC002EAD28FCD41D /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = PersonalCarPlay;
+		};
+		1FEE65D335B33930123108AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24AC0977B295261699AB6D91 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Beta;
+		};
+		3352B32B0FEC7F2789F5F84C /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PersonalCarPlay;
+		};
+		367BA839B3FC92CF35005284 /* Private */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Private;
+		};
+		45C28B2CD727683598F99518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		47078A18C4B31B32553EE7AA /* Private */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Private;
+		};
+		47D3D87633F981070B492FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		576AD4FA0CAFB1316A9E0BC3 /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = CarPlay;
+		};
+		646D929640B9CC48A3CFA7F2 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Beta;
+		};
+		6E805A3265CCC7D6AFE79EC2 /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateCarPlay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PrivateCarPlay;
+		};
+		7480CBBA2E5A929A9063DC2D /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = PrivateCarPlay;
+		};
+		7B0AE82C53FC2FD5C7377426 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Beta;
+		};
+		82666A9EF2464C4B03A7728E /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = PrivateCarPlay;
+		};
+		8488B8405DDA97CF8EFA2CF1 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Beta;
+		};
+		8C86450C35209D176B5ED22F /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = CarPlay;
+		};
+		8DFEFC06CC2961D000AE06C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		976C426F617A2C79694A01BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		99F8485702ED01E6937B83D5 /* Private */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/PrivateInfo.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Private;
+		};
+		AC4FAF640832046E0321D6C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AD494A9B20B1D0FE3676BB95 /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = CarPlay;
+		};
+		AFC928814BEBB6F48F0EAE79 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Beta;
+		};
+		B2265E4455DEA0A68E4E34F6 /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PrivateCarPlay;
+		};
+		B40A0576941EE2553C07EB25 /* Private */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Private;
+		};
+		B8AFBB82CCF0B5E13A6B5EE1 /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateCarPlay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = CarPlay;
+		};
+		B9FFAECD399DDE9B6669FEC3 /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D102CAAC6ACB826CA37FB6 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOT_OPENAI_CLIENT_ID = "";
+				DOT_OPENAI_REDIRECT_URI = "dev.dotwatch.app.auth://signin/oauth/callback";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = CarPlay;
+		};
+		BA3041E00CC048C5C5D968F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		BA6108D7BF919A0FA4C67864 /* CarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = CarPlay;
+		};
+		BB17436B3E89BE3E2083BC5B /* Private */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Private;
+		};
+		C0476FBBE2BF419DF61EB06C /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateCarPlay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PersonalCarPlay;
+		};
+		C22D50A44824428EC5A80989 /* Private */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Private;
+		};
+		C2C296FF539DD4D2ED625F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		C47F9FBC1FAB5A1A8B1635C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		C4C36727FE9650030CEEE90E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		CF8B31FFDB36A42A5DF84438 /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/PrivateInfo.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = PersonalCarPlay;
+		};
+		CFCF57971967520BADD7E669 /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Beta;
+		};
+		CFD9D279E5B5974AA438E66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		CFDE497057B6D3B91D6B95B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/PrivateInfo.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		D0D3CD5734D0FAD96562BF19 /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/WatchComplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch.complication;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = PersonalCarPlay;
+		};
+		D386B3CA1B780FB16494AB21 /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = PersonalCarPlay;
+		};
+		D6887289161D6BF5F5C9975A /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = PrivateCarPlay;
+		};
+		DD3119F22D9686E30CEB698F /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Beta;
+		};
+		EB6E7F74F9104BD591C83888 /* PersonalCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateCarPlay.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/PrivateInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				PRODUCT_NAME = DotPhone;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = PersonalCarPlay;
+		};
+		F330F87927E35D3648177740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Phone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F8964EC5BAA52D4E209A1124 /* PrivateCarPlay */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/Watch/PrivateInfo.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dotwatch.app.watch;
+				PRODUCT_NAME = DotWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = PrivateCarPlay;
+		};
+		F930040F4246B1C4C86FCA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/PrivateApp.entitlements;
+				COMPRESS_PNG_FILES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PrivateSafari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.dotwatch.app.private-signin";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) PERSONAL_DIAGNOSTICS";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18DFA76716CD06B3DF9E0528 /* Build configuration list for PBXProject "DotWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8488B8405DDA97CF8EFA2CF1 /* Beta */,
+				B9FFAECD399DDE9B6669FEC3 /* CarPlay */,
+				47D3D87633F981070B492FE8 /* Debug */,
+				16CEB3F7DC002EAD28FCD41D /* PersonalCarPlay */,
+				B40A0576941EE2553C07EB25 /* Private */,
+				7480CBBA2E5A929A9063DC2D /* PrivateCarPlay */,
+				976C426F617A2C79694A01BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		311BADB1745BE7237F8AA735 /* Build configuration list for PBXNativeTarget "DotWatchPrivate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3119F22D9686E30CEB698F /* Beta */,
+				576AD4FA0CAFB1316A9E0BC3 /* CarPlay */,
+				CFDE497057B6D3B91D6B95B4 /* Debug */,
+				CF8B31FFDB36A42A5DF84438 /* PersonalCarPlay */,
+				99F8485702ED01E6937B83D5 /* Private */,
+				F8964EC5BAA52D4E209A1124 /* PrivateCarPlay */,
+				C2C296FF539DD4D2ED625F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		4B8EC954D617CEE25BA412E2 /* Build configuration list for PBXNativeTarget "DotWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCF57971967520BADD7E669 /* Beta */,
+				8C86450C35209D176B5ED22F /* CarPlay */,
+				BA3041E00CC048C5C5D968F5 /* Debug */,
+				D386B3CA1B780FB16494AB21 /* PersonalCarPlay */,
+				09435285E92B9E47FBF629BF /* Private */,
+				D6887289161D6BF5F5C9975A /* PrivateCarPlay */,
+				C4C36727FE9650030CEEE90E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		5B01CEEF161A5DCB8D16111E /* Build configuration list for PBXNativeTarget "DotPhonePrivate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646D929640B9CC48A3CFA7F2 /* Beta */,
+				0111EA2DC9B4F937379F1296 /* CarPlay */,
+				45C28B2CD727683598F99518 /* Debug */,
+				EB6E7F74F9104BD591C83888 /* PersonalCarPlay */,
+				C22D50A44824428EC5A80989 /* Private */,
+				004DA2198D788A0018A49B5B /* PrivateCarPlay */,
+				AC4FAF640832046E0321D6C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		706C9B444E3237972A8B88CA /* Build configuration list for PBXNativeTarget "DotPrivateSignIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFC928814BEBB6F48F0EAE79 /* Beta */,
+				BA6108D7BF919A0FA4C67864 /* CarPlay */,
+				F930040F4246B1C4C86FCA37 /* Debug */,
+				3352B32B0FEC7F2789F5F84C /* PersonalCarPlay */,
+				BB17436B3E89BE3E2083BC5B /* Private */,
+				B2265E4455DEA0A68E4E34F6 /* PrivateCarPlay */,
+				1FEE65D335B33930123108AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		8E48C427364F444B764CC079 /* Build configuration list for PBXNativeTarget "DotPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24AC0977B295261699AB6D91 /* Beta */,
+				B8AFBB82CCF0B5E13A6B5EE1 /* CarPlay */,
+				8DFEFC06CC2961D000AE06C6 /* Debug */,
+				C0476FBBE2BF419DF61EB06C /* PersonalCarPlay */,
+				367BA839B3FC92CF35005284 /* Private */,
+				6E805A3265CCC7D6AFE79EC2 /* PrivateCarPlay */,
+				F330F87927E35D3648177740 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+		9B67CFC902E137B116DD4F5B /* Build configuration list for PBXNativeTarget "DotComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0AE82C53FC2FD5C7377426 /* Beta */,
+				AD494A9B20B1D0FE3676BB95 /* CarPlay */,
+				CFD9D279E5B5974AA438E66C /* Debug */,
+				D0D3CD5734D0FAD96562BF19 /* PersonalCarPlay */,
+				47078A18C4B31B32553EE7AA /* Private */,
+				82666A9EF2464C4B03A7728E /* PrivateCarPlay */,
+				C47F9FBC1FAB5A1A8B1635C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Beta;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		23568066BF867187FBBD5021 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+		624E1FB7C64A7477C83C83C0 /* XCLocalSwiftPackageReference "Packages/DotAuth" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/DotAuth;
+		};
+		8D2FB83504D5D2CD1AB74330 /* XCLocalSwiftPackageReference "Probes/WatchAudio" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Probes/WatchAudio;
+		};
+		956556FD2B1A86C422EC2F72 /* XCLocalSwiftPackageReference "Probes/DirectWatch" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Probes/DirectWatch;
+		};
+		CAC8A6DD8833754FD6BF8FF1 /* XCLocalSwiftPackageReference "Packages/PhoneWebRTC" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PhoneWebRTC;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		242466AA5A926E54953A79E9 /* DotCompanion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCompanion;
+		};
+		421245BCD3DD4CE6C9D22B32 /* DotCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCore;
+		};
+		4E3A567DFC9653A0AF80AB86 /* PhoneWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PhoneWebRTC;
+		};
+		6411A146BDA75F20DDDC30BF /* DotAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotAuth;
+		};
+		7738F2798149EBE3472B0BF9 /* DotCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCore;
+		};
+		85D495BEF9F486A500D4DA9C /* DotCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCore;
+		};
+		8EF73DCFC33AEB81A220CE37 /* WatchAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WatchAudioKit;
+		};
+		A48A8F7442439343735C7BBD /* DotCompanion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCompanion;
+		};
+		BEBDC4B6AE54EB7E09DFD18F /* DotAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotAuth;
+		};
+		C0D2A4193E703E0A0D511AC6 /* DotCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCore;
+		};
+		C5AD7B8F85BCC70D24780AC3 /* DirectWatchLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DirectWatchLink;
+		};
+		C9A9287249CF251806FE1598 /* DirectWatchLink */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DirectWatchLink;
+		};
+		CF614DF0F2B68B19BCC50C61 /* DotCompanion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCompanion;
+		};
+		DC6ADD6FB7DCAFCE7AE541E4 /* DotCompanion */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DotCompanion;
+		};
+		E2F71DD96F153643B68C110E /* WatchAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WatchAudioKit;
+		};
+		E782F30B157BF9FB96291ACD /* PhoneWebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PhoneWebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D98F0E3C2261BCB99B9292AE /* Project object */;
+}

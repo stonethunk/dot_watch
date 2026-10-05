@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "date": "2026-10-04",
+  "platform": "iOS 27 simulator",
+  "mode": "headless native CarPlay framework and production session-coordinator tests",
+  "tests": 8,
+  "passed": true,
+  "credentials_used": false,
+  "microphone_opened": false,
+  "network_opened": false,
+  "physical_carplay_profile_granted": false,
+  "vehicle_tested": false,
+  "driving_display_rendered": false,
+  "notes": "Results cover programmatic CPVoiceControlTemplate creation and shared lifecycle/action paths. No CPInterfaceController connection or head-unit display is simulated by this harness.",
+  "result_bundle": "/private/tmp/dot-watch-carplay-runtime-v3.xcresult",
+  "tests_seconds": 10.006,
+  "coverage": [
+    "setup_and_permission_denial",
+    "native_voice_template_and_avatar_refresh",
+    "talk_mute_unmute_end",
+    "disconnect_and_stale_actions",
+    "disconnect_during_startup",
+    "reconnect_during_startup",
+    "watch_transfer",
+    "failed_stop_retry"
+  ]
+}

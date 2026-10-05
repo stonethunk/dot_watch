@@ -1,0 +1,3 @@
+// Shared neutral defaults; personal settings remain in an ignored local file.
+DEVELOPMENT_TEAM =
+#include? "Local.xcconfig"

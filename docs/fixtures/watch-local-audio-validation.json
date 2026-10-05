@@ -1,0 +1,64 @@
+{
+  "checked": "2026-10-04",
+  "synthetic_audio_tests_passed": 7,
+  "private_build_passed": true,
+  "beta_build_passed": true,
+  "signed_bundle_verified": true,
+  "phone_install_outcome": "success",
+  "watch_install_outcome": "success",
+  "phone_after_user_sign_in": {
+    "setup_step": "ready",
+    "authentic_character_loaded": true,
+    "setup_failure": null,
+    "schema": 2,
+    "configured": true,
+    "input_transcript_events": 0,
+    "output_transcript_events": 0,
+    "state": "idle",
+    "private_credentials_cached": true
+  },
+  "phone_voice_user_reported": true,
+  "native_phone_microphone_independently_verified": false,
+  "cold_launch_verified": false,
+  "cold_launch_blocker": "phone_locked",
+  "physical_watch_audio_test_passed": false,
+  "dot_watch_voice_available": false,
+  "distribution_checks": {
+    "public": {
+      "personal_setup_present": false,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": false,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": false,
+      "private_safari_extension_present": false,
+      "app_icon_present": true,
+      "dependency_notices_verified": 10
+    },
+    "public_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": false,
+      "watch_private_audio_probe_present": false
+    },
+    "personal_positive_control": {
+      "personal_setup_present": true,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": true,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": true,
+      "private_safari_extension_present": true,
+      "app_icon_present": true,
+      "private_browser_resources_verified": 5
+    },
+    "personal_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": true,
+      "watch_private_audio_probe_present": true
+    }
+  }
+}

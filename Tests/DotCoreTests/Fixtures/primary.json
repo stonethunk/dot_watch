@@ -1,0 +1,13 @@
+{
+  "selection": {"thread_id": "fixture-thread", "aeon_id": "fixture-dot", "available": true},
+  "profile": {
+    "id": "fixture-dot", "active_root_thread_id": "fixture-thread",
+    "avatar_type": "rendered-interactive",
+    "avatar_url": "https://fixture.oaiusercontent.com/avatar.png?sig=synthetic",
+    "avatar_manifest": {"snapshot": {
+      "content_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "manifest_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "width": 512, "height": 512
+    }}
+  }
+}

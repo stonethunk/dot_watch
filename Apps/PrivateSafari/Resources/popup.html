@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dot Private Sign-in</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <img src="DotIcon.png" width="56" height="56" alt="Dot">
+  <h1>Connect your Dot</h1>
+  <p>Sign in as yourself at <strong>chatgpt.com</strong> first. Connect only an account that belongs to you.</p>
+  <p>This gives the private Dot app account access until expiry or sign-out. It reads your session’s access token and account ID when you choose Connect. It does not read your password.</p>
+  <button id="connect" type="button">Connect this account to Dot</button>
+  <p id="status" role="status" aria-live="polite"></p>
+  <a id="return" hidden href="dotwatch-private://setup">Return to Dot</a>
+  <script src="popup.js"></script>
+</body></html>

@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-04T19:09:26.655882+00:00",
+  "build": {
+    "bundles": [
+      {
+        "bundle": "dev.dotwatch.app",
+        "version": "0.1.0",
+        "build": "3",
+        "binary_sha256": "c118ffff3e5c32df7ea2d4a4c211534f00347247e3e698d4e8700a4aa7ac053b"
+      },
+      {
+        "bundle": "dev.dotwatch.app.watch",
+        "version": "0.1.0",
+        "build": "3",
+        "binary_sha256": "b504de57ec909b1465983907cc1aefb5dce724e1287cc997399a5f8918bacf7e"
+      },
+      {
+        "bundle": "dev.dotwatch.app.watch.complication",
+        "version": "0.1.0",
+        "build": "3",
+        "binary_sha256": "140a80611944a7c65c7c0aa978316bc010f3c505450769e3f3f8c86c23358708"
+      },
+      {
+        "bundle": "dev.dotwatch.app.private-signin",
+        "version": "0.1.0",
+        "build": "3",
+        "binary_sha256": "3358218d2724da03f2f350f313c2fe3d879d96730138c6e0c02c200f05e3d565"
+      }
+    ],
+    "embedded_and_standalone_watch_binary_match": true
+  },
+  "baseline": "watch-live-voice-validation.json",
+  "trigger": "User reports jitter in Dot spoken responses during physical Watch dialogue.",
+  "changes": [
+    "Timed 120 ms receive startup and buffering after pauses, independent of server packet count.",
+    "60 ms elapsed reorder deadline; burst loss skips to available audio once, rather than waiting for each lost packet.",
+    "Playback frame completions update on audio callback queue; generation prevents stale callbacks affecting interrupted playback.",
+    "120 ms PCM target with 240 ms scheduled cap.",
+    "Anchored 20 ms audio clock, up to three fresh captured frames per late cycle, and capture overflow drops only excess oldest frames.",
+    "Sanitized schema 2 counters distinguish input-frame drops, packet gaps, overflow and clock delays."
+  ],
+  "audio_package_tests": {
+    "tests": 20,
+    "passed": true,
+    "log": "/private/tmp/dot-watch-jitter-audio-tests.log"
+  },
+  "signed_private_build_passed": true,
+  "signature_verified": true,
+  "installation": {
+    "phone": "success",
+    "watch": "success"
+  },
+  "watch_symbol_uuids": {
+    "arm64": "C653B630-30D9-37AE-85BD-0D2ED2DA3EAE",
+    "arm64_32": "FF9A8C3D-A249-3A99-943B-8C424646A050"
+  },
+  "phone_post_install_launch": "Initial CLI launch was locked; after user opened Dot and tested, fresh build 3 phone diagnostics report ready, cached sign-in and authentic character.",
+  "physical_quality_comparison": "User reports clearer Dot response with little or no jitter on build 3.",
+  "physical_quality_improved_confirmed": true,
+  "carplay_runtime_tests_repeated": false,
+  "carplay_source_changed": false,
+  "carplay_entitlement_granted": false,
+  "public_distribution_control": "Existing Beta binary checked against private build 3. This does not constitute a fresh build of public source or public distribution readiness.",
+  "credentials_transferred": false,
+  "recordings_saved": false,
+  "transcripts_saved": false,
+  "phone_safe_state": {
+    "schema": 3,
+    "build": "0.1.0 (3)",
+    "updated_at": "2026-10-04T19:09:45Z",
+    "configured": true,
+    "setup_step": "ready",
+    "setup_failure": null,
+    "state": "idle",
+    "private_credentials_cached": true,
+    "authentic_character_loaded": true,
+    "carplay_display_connected": false,
+    "carplay_template_accepted": null
+  },
+  "physical_watch_safe_state": {
+    "active": false,
+    "audio_file_written": false,
+    "audio_released": true,
+    "build": "0.1.0 (3)",
+    "capture_sample_rate": 48000,
+    "captured_frames": 609600,
+    "credentials_stored": false,
+    "data_events": 41,
+    "dropped_capture_frames": 0,
+    "dropped_resampled_frames": 57024,
+    "encoded_frames": 547200,
+    "failure": null,
+    "inbox_dropped_packets": 0,
+    "input_transcript_events": 0,
+    "jitter_duplicate_packets": 0,
+    "jitter_late_packets": 0,
+    "jitter_missing_packets": 0,
+    "jitter_overflow_drops": 0,
+    "late_audio_ticks": 1,
+    "muted": false,
+    "output_transcript_events": 0,
+    "phase": "idle",
+    "playback_empty_refills": 3,
+    "received_rtp_packets": 560,
+    "resampled_frames": 606208,
+    "scheduled_playback_frames": 525960,
+    "schema": 2,
+    "sent_rtp_packets": 570,
+    "stopped_at_phase": "active",
+    "updated_at": "2026-10-04T19:09:45Z"
+  },
+  "physical_end_audio_release_observed": true,
+  "remaining_audio_validation": "Ten-minute locked-phone/wrist-down test, interruptions and battery remain open. Bounded uplink framer discarded 57024 frames in this short trial; determine input quality and timing before full audio acceptance.",
+  "subsequent_connection_failure": {
+    "user_report": "Works for a while and then loses connection.",
+    "safe_watch_report": {
+      "active": false,
+      "audio_file_written": false,
+      "audio_released": true,
+      "build": "0.1.0 (3)",
+      "capture_sample_rate": 48000,
+      "captured_frames": 1032000,
+      "credentials_stored": false,
+      "data_events": 54,
+      "dropped_capture_frames": 0,
+      "dropped_resampled_frames": 97536,
+      "encoded_frames": 930240,
+      "failure": "phone_lease_lost",
+      "inbox_dropped_packets": 0,
+      "input_transcript_events": 0,
+      "jitter_duplicate_packets": 0,
+      "jitter_late_packets": 0,
+      "jitter_missing_packets": 0,
+      "jitter_overflow_drops": 0,
+      "late_audio_ticks": 7,
+      "muted": false,
+      "output_transcript_events": 0,
+      "phase": "stopping",
+      "playback_empty_refills": 4,
+      "received_rtp_packets": 984,
+      "resampled_frames": 1028096,
+      "scheduled_playback_frames": 940680,
+      "schema": 2,
+      "sent_rtp_packets": 969,
+      "stopped_at_phase": "active",
+      "updated_at": "2026-10-04T19:15:19Z"
+    },
+    "confirmed_failure": "phone_lease_lost",
+    "cause_of_missing_phone_acknowledgement": "not yet established",
+    "sustained_connection_accepted": false,
+    "phone_state_user_report": "typically locked"
+  }
+}

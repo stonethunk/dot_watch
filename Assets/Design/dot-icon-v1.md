@@ -1,0 +1,5 @@
+Created with the built-in image-generation tool on 2026-10-04 for the user-requested purple Dot app icon with cyan accents. Original generated PNG retained alongside this file. The app catalogs use a 1024×1024 downsample for Apple's icon compiler.
+
+Prompt:
+
+Use case: logo-brand. Asset type: final iPhone and Apple Watch app icon, square 1024 by 1024 pixels. Primary request: a recognizable purple dot with cyan accents for a personal app named Dot. A single rich violet-purple round orb centered on a deep near-black purple background, with a crisp bright cyan accent crescent along part of the orb's lower edge and a tiny cyan highlight. Simple bold silhouette, soft polished dimensionality, clean edges, highly legible when shrunk to a small Watch icon. The orb fills about 65 percent of the square and all elements fit inside the central circular Watch crop. Full opaque square background, no pre-rounded square corners. No letters, no text, no eyes or face, no logos, no watermark, no mockup or device frame. Purple is dominant, cyan is the secondary accent.

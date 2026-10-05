@@ -1,0 +1,77 @@
+{
+  "checked": "2026-10-04",
+  "initial_physical_trial": {
+    "user_report": "closed_immediately_after_test_button",
+    "exception": "EXC_BREAKPOINT",
+    "signal": "SIGTRAP",
+    "callback_queue": "RealtimeMessenger.mServiceQueue",
+    "binary_and_dsym_uuid_matched": true,
+    "symbolicated_app_frame": "closure #2 in WatchAudioDiagnostic.run()",
+    "fixed_cause": "microphone_tap_inherited_main_actor_isolation",
+    "raw_crash_report_included": false
+  },
+  "synthetic_package_tests_passed": 8,
+  "simulator_build_passed": true,
+  "simulator_callback_sendable_warnings": 0,
+  "simulator_preflight": {
+    "background_callback_completed": true,
+    "captured_frames": 48000,
+    "credentials_used": false,
+    "decoded_frames": 47880,
+    "encoded_packets": 50,
+    "microphone_opened": false,
+    "mode": "synthetic_simulator",
+    "network_opened": false,
+    "passed": true,
+    "playback_opened": false,
+    "schema": 1,
+    "signal_present": true
+  },
+  "private_device_build_passed": true,
+  "beta_build_passed": true,
+  "signed_bundle_verified": true,
+  "phone_install_outcome": "success",
+  "watch_install_outcome": "success",
+  "watch_first_transfer_failed": "temporary_device_disconnection",
+  "distribution_checks": {
+    "public": {
+      "personal_setup_present": false,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": false,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": false,
+      "private_safari_extension_present": false,
+      "app_icon_present": true,
+      "dependency_notices_verified": 10
+    },
+    "public_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": false,
+      "watch_private_audio_probe_present": false
+    },
+    "personal_positive_control": {
+      "personal_setup_present": true,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": true,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": true,
+      "private_safari_extension_present": true,
+      "app_icon_present": true,
+      "private_browser_resources_verified": 5
+    },
+    "personal_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": true,
+      "watch_private_audio_probe_present": true
+    }
+  },
+  "physical_watch_audio_retry_verified": false,
+  "heard_physical_watch_playback": false,
+  "dot_watch_voice_available": false
+}

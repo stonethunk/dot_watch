@@ -1,0 +1,5 @@
+// Copy to OpenAI.local.xcconfig after OpenAI registers this native public client.
+// This file carries PUBLIC configuration only. Never add a client secret/token.
+DOT_OPENAI_CLIENT_ID =
+// URI comes from project.yml. Change only after exact callback registration;
+// update the URL scheme and native configuration validation together.

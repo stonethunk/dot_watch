@@ -1,0 +1,27 @@
+{
+  "checked": "2026-10-04",
+  "mac_synthetic_tests_passed": 3,
+  "watchos_26_cross_compile_passed": true,
+  "probe": {
+    "decoded_frames": 47880,
+    "decoded_signal_present": true,
+    "encoded_packets": 50,
+    "microphone_opened": false,
+    "native_codec_available": true,
+    "network_opened": false,
+    "physical_watch_test": false
+  },
+  "phone_test_current_status": {
+    "private_credentials_cached": false,
+    "authentic_character_loaded": false,
+    "input_transcript_events": 0,
+    "setup_step": "signed_out",
+    "state": "idle",
+    "schema": 2,
+    "configured": false,
+    "setup_failure": null,
+    "output_transcript_events": 0
+  },
+  "native_phone_voice_verified": false,
+  "physical_watch_audio_verified": false
+}

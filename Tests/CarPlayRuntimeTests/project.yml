@@ -1,0 +1,33 @@
+name: DotCarPlayRuntime
+options:
+  deploymentTarget:
+    iOS: '26.4'
+packages:
+  DotCore:
+    path: ../..
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+targets:
+  DotCarPlayRuntimeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: CarPlayRuntimeTests.swift
+      - path: ../../Apps/Phone/CarPlayExperience.swift
+      - path: ../DotCoreTests/Fixtures/primary.json
+        buildPhase: resources
+    dependencies:
+      - package: DotCore
+        product: DotCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.dotwatch.app.carplay-runtime-tests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  DotCarPlayRuntime:
+    build:
+      targets:
+        DotCarPlayRuntimeTests: [test]
+    test:
+      targets: [DotCarPlayRuntimeTests]

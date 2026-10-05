@@ -1,0 +1,270 @@
+name: DotWatch
+options:
+  bundleIdPrefix: dev.dotwatch
+  deploymentTarget:
+    iOS: '26.4'
+    watchOS: '26.0'
+configs:
+  Debug: debug
+  Release: release
+  Beta: release
+  CarPlay: release
+  PersonalCarPlay: debug
+  Private: release
+  PrivateCarPlay: release
+configFiles:
+  Debug: Configuration/Signing.xcconfig
+  Release: Configuration/Signing.xcconfig
+  Beta: Configuration/Signing.xcconfig
+  CarPlay: Configuration/Signing.xcconfig
+  PersonalCarPlay: Configuration/Signing.xcconfig
+  Private: Configuration/Signing.xcconfig
+  PrivateCarPlay: Configuration/Signing.xcconfig
+packages:
+  DotCore:
+    path: .
+  DotAuth:
+    path: Packages/DotAuth
+  WatchAudioKit:
+    path: Probes/WatchAudio
+  DirectWatchLink:
+    path: Probes/DirectWatch
+  PhoneWebRTC:
+    path: Packages/PhoneWebRTC
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    CODE_SIGN_STYLE: Automatic
+    CURRENT_PROJECT_VERSION: 5
+    MARKETING_VERSION: 0.1.0
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DOT_OPENAI_CLIENT_ID: ''
+    DOT_OPENAI_REDIRECT_URI: 'dev.dotwatch.app.auth://signin/oauth/callback'
+targetTemplates:
+  DotPhoneBase:
+    type: application
+    platform: iOS
+    sources:
+      - path: Apps/Phone
+        excludes: [Info.plist, PrivateInfo.plist]
+      - path: Apps/ScreenshotDemo
+      - path: Apps/PrivateWatch
+    dependencies:
+      - package: DotCore
+        product: DotCore
+      - package: DotCore
+        product: DotCompanion
+      - package: DotAuth
+        product: DotAuth
+      - package: PhoneWebRTC
+        product: PhoneWebRTC
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.dotwatch.app
+        TARGETED_DEVICE_FAMILY: '1'
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: Configuration/PrivateApp.entitlements
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) PERSONAL_DIAGNOSTICS'
+        PersonalCarPlay:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) PERSONAL_DIAGNOSTICS'
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateCarPlay.entitlements
+        Private:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) PERSONAL_DIAGNOSTICS'
+        PrivateCarPlay:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) PERSONAL_DIAGNOSTICS'
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateCarPlay.entitlements
+        CarPlay:
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateCarPlay.entitlements
+    info:
+      path: Apps/Phone/Info.plist
+      properties:
+        CFBundleDisplayName: Dot
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        DotOpenAIClientID: $(DOT_OPENAI_CLIENT_ID)
+        DotOpenAIRedirectURI: $(DOT_OPENAI_REDIRECT_URI)
+        CFBundleURLTypes:
+          - CFBundleURLName: dev.dotwatch.app.auth
+            CFBundleURLSchemes: [dev.dotwatch.app.auth]
+        NSMicrophoneUsageDescription: Speak with your existing ChatGPT Dot.
+        UIBackgroundModes: [audio]
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: YES
+          UISceneConfigurations:
+            CPTemplateApplicationSceneSessionRoleApplication:
+              - UISceneConfigurationName: Dot CarPlay
+                UISceneClassName: CPTemplateApplicationScene
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).CarPlaySceneDelegate
+  DotWatchBase:
+    type: application
+    platform: watchOS
+    sources:
+      - path: Apps/Watch
+        excludes: [Info.plist, PrivateInfo.plist, Notices]
+      - path: Apps/ScreenshotDemo
+      - path: Apps/PrivateWatch
+      - path: Apps/Watch/Notices
+        buildPhase: resources
+    dependencies:
+      - package: DotCore
+        product: DotCompanion
+      - package: WatchAudioKit
+        product: WatchAudioKit
+      - package: DirectWatchLink
+        product: DirectWatchLink
+      - target: DotComplication
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.dotwatch.app.watch
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SKIP_INSTALL: YES
+    info:
+      path: Apps/Watch/Info.plist
+      properties:
+        CFBundleDisplayName: Dot
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        WKApplication: YES
+        WKCompanionAppBundleIdentifier: dev.dotwatch.app
+        WKRunsIndependentlyOfCompanionApp: NO
+        CFBundleURLTypes:
+          - CFBundleURLName: dev.dotwatch.app.watch
+            CFBundleURLSchemes: [dotwatch]
+targets:
+  DotPhone:
+    templates: [DotPhoneBase]
+    dependencies:
+      - target: DotWatch
+        embed: true
+  DotPhonePrivate:
+    productName: DotPhone
+    templates: [DotPhoneBase]
+    dependencies:
+      - target: DotWatchPrivate
+        embed: true
+      - target: DotPrivateSignIn
+        embed: true
+    settings:
+      base:
+        PRODUCT_NAME: DotPhone
+      configs:
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateApp.entitlements
+        Private:
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateApp.entitlements
+        PersonalCarPlay:
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateCarPlay.entitlements
+        PrivateCarPlay:
+          CODE_SIGN_ENTITLEMENTS: Configuration/PrivateCarPlay.entitlements
+    info:
+      path: Apps/Phone/PrivateInfo.plist
+      properties:
+        DotPrivateBrowserSetup: YES
+        CFBundleURLTypes:
+          - CFBundleURLName: dev.dotwatch.app.private
+            CFBundleURLSchemes: [dotwatch-private]
+  DotPrivateSignIn:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Apps/PrivateSafari
+        excludes: [Resources, Info.plist]
+      - path: Apps/PrivateSafari/Resources
+        buildPhase: resources
+      - path: Apps/Phone/PrivateSetup
+    dependencies:
+      - package: DotCore
+        product: DotCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.dotwatch.app.private-signin
+        COMPRESS_PNG_FILES: NO
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        APPLICATION_EXTENSION_API_ONLY: YES
+        CODE_SIGN_ENTITLEMENTS: Configuration/PrivateApp.entitlements
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) PERSONAL_DIAGNOSTICS'
+    info:
+      path: Apps/PrivateSafari/Info.plist
+      properties:
+        CFBundleDisplayName: Dot Private Sign-in
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.web-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).SafariWebExtensionHandler
+  DotWatch:
+    templates: [DotWatchBase]
+  DotWatchPrivate:
+    productName: DotWatch
+    templates: [DotWatchBase]
+    dependencies:
+      - package: DotCore
+        product: DotCore
+    settings:
+      base:
+        PRODUCT_NAME: DotWatch
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) DOT_PRIVATE_WATCH'
+      configs:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS'
+          INFOPLIST_FILE: Apps/Watch/PrivateInfo.plist
+        Private:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS'
+          INFOPLIST_FILE: Apps/Watch/PrivateInfo.plist
+        PrivateCarPlay:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS'
+          INFOPLIST_FILE: Apps/Watch/PrivateInfo.plist
+        PersonalCarPlay:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: '$(inherited) DOT_PRIVATE_WATCH PERSONAL_DIAGNOSTICS'
+          INFOPLIST_FILE: Apps/Watch/PrivateInfo.plist
+  DotComplication:
+    type: app-extension
+    platform: watchOS
+    sources: [Apps/WatchComplication]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.dotwatch.app.watch.complication
+        GENERATE_INFOPLIST_FILE: NO
+        SKIP_INSTALL: YES
+        APPLICATION_EXTENSION_API_ONLY: YES
+    info:
+      path: Apps/WatchComplication/Info.plist
+      properties:
+        CFBundleDisplayName: Dot
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+schemes:
+  DotPhone:
+    build:
+      targets:
+        DotPhone: all
+    run:
+      config: Debug
+    archive:
+      config: Release
+  DotPrivate:
+    build:
+      targets:
+        DotPhonePrivate: all
+    run:
+      config: Private
+    archive:
+      config: Private
+  DotWatchPrivate:
+    build:
+      targets:
+        DotWatchPrivate: all
+    run:
+      config: Private
+    archive:
+      config: Private

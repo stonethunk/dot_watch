@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "captured_on": "2026-10-04",
+  "build": "0.1.0 (4)",
+  "source": "Unedited xcrun simctl io screenshot captures of the native SwiftUI simulator apps",
+  "demo_artwork": "original generated purple/cyan app icon",
+  "account_access": false,
+  "voice_started": false,
+  "screenshots": [
+    {
+      "file": "iphone.png",
+      "device": "iPhone 18 Pro",
+      "runtime": "iOS 27.0",
+      "launch_arguments": [
+        "--readme-demo"
+      ],
+      "width": 1206,
+      "height": 2622,
+      "sha256": "a0d82eefd8f7151d17c142abc20259daccdbfa4dc7c734d648d3b73403b22ddb"
+    },
+    {
+      "file": "watch.png",
+      "device": "Apple Watch Ultra 4 (49mm)",
+      "runtime": "watchOS 27.0",
+      "launch_arguments": [
+        "--readme-demo"
+      ],
+      "width": 422,
+      "height": 514,
+      "sha256": "357a727010d191797f68a613282dbe7050295d1a8ed2ce4df1738e364df871c1"
+    },
+    {
+      "file": "safari-setup.png",
+      "device": "iPhone 18 Pro",
+      "runtime": "iOS 27.0",
+      "launch_arguments": [
+        "--readme-demo",
+        "--readme-setup"
+      ],
+      "width": 1206,
+      "height": 2622,
+      "sha256": "07c57222a973d3906a79dcc444bfa154bc73fc80612c8df266079dd8a4744c42"
+    }
+  ],
+  "demo_animation_paused": true
+}

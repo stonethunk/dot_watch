@@ -1,0 +1,82 @@
+{
+  "originHash" : "527364c69be43123e5d3635bca1df747a1ef8f10dae787794eadad0464fd4e13",
+  "pins" : [
+    {
+      "identity" : "jwt-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vapor/jwt-kit.git",
+      "state" : {
+        "revision" : "1b55c7529eff82cd9fa907e67a539404459a02e6"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "3b6410f7dee09eb33cdd26260c5fd47fda19b0e2",
+        "version" : "1.7.3"
+      }
+    },
+    {
+      "identity" : "swift-certificates",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-certificates.git",
+      "state" : {
+        "revision" : "ff86b924ead66f853b8baf91f3c41926a8f36177",
+        "version" : "1.21.0"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "da9d28d69ebe3894b18376c8f2395c2f37b8448f",
+        "version" : "4.5.2"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "9c6fb14227f55d8f711ce3847dc2f419fb0ecacb",
+        "version" : "1.15.1"
+      }
+    },
+    {
+      "identity" : "swift-networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1amageek/swift-networking.git",
+      "state" : {
+        "revision" : "c5da46c2ab2fd1244b40a208cd1fa406ead43dca"
+      }
+    },
+    {
+      "identity" : "swift-ssl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1amageek/swift-ssl.git",
+      "state" : {
+        "revision" : "045d6c1ccffd5adc7f2da2fd748de86f05bbde9b"
+      }
+    },
+    {
+      "identity" : "swift-tls",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1amageek/swift-tls.git",
+      "state" : {
+        "revision" : "cbb2f5b3e3355c51cfea2edc6a8282fed16e790d"
+      }
+    },
+    {
+      "identity" : "webrtc",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stasel/WebRTC.git",
+      "state" : {
+        "revision" : "0c0ad84dac6c1941c16a414dfcfba94691866e4c"
+      }
+    }
+  ],
+  "version" : 3
+}

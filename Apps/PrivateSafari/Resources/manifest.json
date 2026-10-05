@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Dot Private Sign-in",
+  "version": "0.1.0",
+  "description": "Connect your own signed-in ChatGPT account to your personal Dot app.",
+  "permissions": ["activeTab", "scripting", "nativeMessaging"],
+  "action": {"default_popup": "popup.html", "default_icon": "DotIcon.png"},
+  "icons": {"48": "DotIcon.png", "96": "DotIcon.png"},
+  "content_security_policy": {"extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"}
+}

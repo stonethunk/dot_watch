@@ -1,0 +1,25 @@
+{
+  "checked": "2026-10-03",
+  "sign_in_security_tests": 8,
+  "sign_in_tests_passed": true,
+  "debug_build": "passed, signing disabled",
+  "beta_build": "passed, signing disabled",
+  "package_checks": {
+    "public": {
+      "personal_setup_present": false,
+      "personal_token_payload_keys_present": false,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "dependency_notices_verified": 10
+    },
+    "personal_positive_control": {
+      "personal_setup_present": true,
+      "personal_token_payload_keys_present": true,
+      "openai_client_configured": false,
+      "callback_scheme_present": true
+    }
+  },
+  "live_openai_login_verified": false,
+  "dot_distribution_grant_available": false,
+  "testflight_uploaded": false
+}

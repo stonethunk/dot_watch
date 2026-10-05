@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "notes": "Exact upstream license, notices, and README files. swift-webrtc and swift-tls declare MIT in README; swift-networking has no separate LICENSE in the pinned source. No invented copyright grant. Public redistribution review remains open.",
+  "files": [
+    {
+      "package": "swift-log",
+      "revision": "9c6fb14227f55d8f711ce3847dc2f419fb0ecacb",
+      "source_file": "NOTICE.txt",
+      "sha256": "879b241d49b407215a0ad8e1c6a71c358d7b29591b090cf379d37a5f50cff918",
+      "packaged_file": "swift-log-NOTICE.txt"
+    },
+    {
+      "package": "swift-log",
+      "revision": "9c6fb14227f55d8f711ce3847dc2f419fb0ecacb",
+      "source_file": "README.md",
+      "sha256": "5b48faca76692d06c1de0bef5444f384c09db726d344a3701de7c78dda3851f9",
+      "packaged_file": "swift-log-README.md"
+    },
+    {
+      "package": "swift-networking",
+      "revision": "c5da46c2ab2fd1244b40a208cd1fa406ead43dca",
+      "source_file": "README.md",
+      "sha256": "5aec5f7e0f1d66c354b196858c6a290d01b9ed182493c63af8a1d9c2ac3fa054",
+      "packaged_file": "swift-networking-README.md"
+    },
+    {
+      "package": "swift-ssl",
+      "revision": "045d6c1ccffd5adc7f2da2fd748de86f05bbde9b",
+      "source_file": "LICENSE",
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "packaged_file": "swift-ssl-LICENSE.txt"
+    },
+    {
+      "package": "swift-tls",
+      "revision": "cbb2f5b3e3355c51cfea2edc6a8282fed16e790d",
+      "source_file": "README.md",
+      "sha256": "f936ca7897be8bd5562d1e53d84c4010383da0167607810a73cb7335b465ebe9",
+      "packaged_file": "swift-tls-README.md"
+    },
+    {
+      "package": "swift-webrtc",
+      "revision": "f35ac95e4e743b1fb6be50c184e7d3691ef7ddb1",
+      "source_file": "README.md",
+      "sha256": "c12ad38ca1ed8175358e3babcc879b9ce015ff57bd4a7d3c74169e2a3907af03",
+      "packaged_file": "swift-webrtc-README.md"
+    },
+    {
+      "package": "swift-log",
+      "revision": "9c6fb14227f55d8f711ce3847dc2f419fb0ecacb",
+      "source_file": "LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "packaged_file": "swift-log-LICENSE.txt"
+    }
+  ]
+}

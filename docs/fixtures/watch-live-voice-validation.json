@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-04T18:58:13.064721+00:00",
+  "implementation": "private direct Watch audio with paired iPhone account/session control; dedicated native CarPlay scene",
+  "build": {
+    "bundles": [
+      {
+        "bundle": "dev.dotwatch.app",
+        "version": "0.1.0",
+        "build": "2",
+        "binary_sha256": "0c0820ae8b18ac2d751d74314500cc12eafcb1047d4be691b22086058dcbde74"
+      },
+      {
+        "bundle": "dev.dotwatch.app.watch",
+        "version": "0.1.0",
+        "build": "2",
+        "binary_sha256": "81fd69ba7c7c1dffd7c22788e8b1b295801192017a057ee3cd3e773efc3a66d6"
+      },
+      {
+        "bundle": "dev.dotwatch.app.watch.complication",
+        "version": "0.1.0",
+        "build": "2",
+        "binary_sha256": "cc955c1a65b3058264d3d7f17fc738712dcb3633f9f9d5e6b86655048544bbf3"
+      },
+      {
+        "bundle": "dev.dotwatch.app.private-signin",
+        "version": "0.1.0",
+        "build": "2",
+        "binary_sha256": "9e1c0dd1f52b9ba07902644b77beba331028523c2188482b3dbc8182967bff53"
+      }
+    ],
+    "embedded_and_standalone_watch_binary_match": true
+  },
+  "signed_private_build_passed": true,
+  "signature_verified": true,
+  "installation": {
+    "phone": "success",
+    "watch": "success"
+  },
+  "phone_safe_state": {
+    "schema": 3,
+    "build": "0.1.0 (2)",
+    "updated_at": "2026-10-04T18:57:10Z",
+    "setup_step": "ready",
+    "setup_failure": null,
+    "configured": true,
+    "private_credentials_cached": true,
+    "authentic_character_loaded": true,
+    "state": "idle",
+    "carplay_display_connected": false,
+    "carplay_template_accepted": null,
+    "input_transcript_events": 0,
+    "output_transcript_events": 0
+  },
+  "user_confirmed_phone_ready_with_dot": true,
+  "watch_symbol_uuids": {
+    "arm64": "F7CA7872-9794-3DFB-B278-2F38DE13EC0D",
+    "arm64_32": "0E37A232-304B-3F49-BFC2-6BBA4E17FB13"
+  },
+  "shared_tests": {
+    "core_swift_testing": 25,
+    "companion_swift_testing": 11,
+    "private_import_xctest": 3,
+    "passed": true
+  },
+  "audio_package_tests": {
+    "tests": 11,
+    "passed": true
+  },
+  "synthetic_watch_simulator": {
+    "background_callback_completed": true,
+    "captured_frames": 48000,
+    "credentials_used": false,
+    "decoded_frames": 47880,
+    "encoded_packets": 50,
+    "microphone_opened": false,
+    "mode": "synthetic_simulator",
+    "network_opened": false,
+    "passed": true,
+    "playback_opened": false,
+    "schema": 1,
+    "signal_present": true
+  },
+  "carplay_runtime_tests": {
+    "tests": 8,
+    "passed": true,
+    "evidence": "carplay-runtime-validation.json"
+  },
+  "watch_upstream_source_files_verified": 168,
+  "distribution_boundary_checks": {
+    "public": {
+      "personal_setup_present": false,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": false,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": false,
+      "private_safari_extension_present": false,
+      "app_icon_present": true,
+      "remote_watch_media_present": false,
+      "dependency_notices_verified": 10
+    },
+    "public_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": false,
+      "watch_private_audio_probe_present": false,
+      "watch_private_voice_present": false
+    },
+    "personal_positive_control": {
+      "personal_setup_present": true,
+      "personal_token_payload_keys_present": false,
+      "private_import_parser_present": true,
+      "openai_client_configured": false,
+      "callback_scheme_present": true,
+      "private_browser_setup_enabled": true,
+      "private_safari_extension_present": true,
+      "app_icon_present": true,
+      "remote_watch_media_present": true,
+      "private_browser_resources_verified": 5
+    },
+    "personal_companion": {
+      "embedded_watch_app": true,
+      "embedded_complication": true,
+      "watch_credential_code_present": false,
+      "watch_microphone_requested": true,
+      "watch_private_audio_probe_present": true,
+      "watch_private_voice_present": true
+    }
+  },
+  "public_positive_control_build": "pre-metadata-fix Beta build; same source implementation, build number 1",
+  "provisioning": {
+    "application_identifier": "YOUR_APPLE_TEAM_ID.dev.dotwatch.app",
+    "carplay_voice_granted": false,
+    "profile_expiry": "2027-10-04T16:05:47"
+  },
+  "physical_watch_spoken_exchange_confirmed": true,
+  "physical_watch_wrist_down_tested": false,
+  "carplay_head_unit_display_rendered": false,
+  "vehicle_tested": false,
+  "limitations": [
+    "Initial direct Watch conversation and cleanup observed; quality is unacceptable and wrist-down/locked-phone acceptance remains pending.",
+    "Headless simulator audio uses synthetic PCM; it opens no microphone or network and plays no audio.",
+    "CarPlay tests use synthetic signaling/media and do not connect a CPInterfaceController or render a head-unit screen.",
+    "Normal Private signing profile has no CarPlay conversational grant.",
+    "No fresh credentials transferred and no refresh token copied in this build/install."
+  ],
+  "physical_watch_quality": "User reports dialogue with substantial jitter in Dot response; audio quality fails acceptance.",
+  "physical_watch_safe_state": {
+    "active": false,
+    "audio_file_written": false,
+    "audio_released": true,
+    "captured_frames": 1046400,
+    "credentials_stored": false,
+    "data_events": 93,
+    "failure": null,
+    "input_transcript_events": 0,
+    "muted": false,
+    "output_transcript_events": 0,
+    "phase": "idle",
+    "received_rtp_packets": 1003,
+    "scheduled_playback_frames": 819720,
+    "schema": 1,
+    "sent_rtp_packets": 759,
+    "stopped_at_phase": "active",
+    "updated_at": "2026-10-04T18:58:33Z"
+  },
+  "physical_watch_end_audio_released_observed": true
+}
